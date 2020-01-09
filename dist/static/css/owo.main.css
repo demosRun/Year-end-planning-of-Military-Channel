@@ -1,0 +1,719 @@
+body, html, .owo, .page-box {
+  padding: 0;
+  margin: 0;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.badge {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.badge img {
+  width: 45%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 3;
+}
+
+.badge .light-1 {
+  background-image: url('../resource/light-1.png');
+  width: 100%px;
+  height: 100%px;
+  background-position: center;
+  background-size: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 200px;
+  -webkit-animation: myfirst 1.5s infinite;
+          animation: myfirst 1.5s infinite;
+  background-repeat: no-repeat;
+}
+
+.badge .light-2 {
+  background-image: url('../resource/light-2.png');
+  width: 100%px;
+  height: 100%px;
+  background-position: center;
+  background-size: 90%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 200px;
+  background-repeat: no-repeat;
+  -webkit-animation: myfirst 1.5s infinite;
+          animation: myfirst 1.5s infinite;
+  z-index: 2;
+}
+
+@-webkit-keyframes myfirst {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes myfirst {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
+.loading-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10%;
+  bottom: 0;
+  margin: auto;
+}
+
+.loading-box .badge {
+  top: -20%;
+}
+
+.loading-box .num {
+  color: #d3263b;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  line-height: 30px;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+}
+.page1 {
+  background-color: #fef4e2;
+}
+
+.page1 .so-6 {
+  position: absolute;
+  left: 255px;
+  z-index: 6;
+  top: 189px;
+}
+
+.page1 .so-5 {
+  position: absolute;
+  left: 127px;
+  z-index: 5;
+  top: 257px;
+}
+
+.page1 .so-4 {
+  position: absolute;
+  left: 264px;
+  z-index: 4;
+  top: 328px;
+}
+
+.page1 .so-7 {
+  position: absolute;
+  left: 282px;
+  z-index: 7;
+  top: 854px;
+}
+
+.page1 .so-3 {
+  position: absolute;
+  left: 100px;
+  z-index: 3;
+  top: 995px;
+}
+
+.page1 .so-2 {
+  position: absolute;
+  left: 150px;
+  z-index: 2;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 23px;
+  line-height: 40px;
+  color: #d3263b;
+  top: 1033px;
+  width: 454px;
+}
+
+.page1 .badge {
+  width: 600px;
+  height: 600px;
+  top: -10%;
+}
+              [font="FZDBSJT.TTF"] {
+                font-family: 'FZDBSJT';
+              }
+              @font-face {
+                font-family: 'FZDBSJT';
+                src: url('../font/FZDBSJT.eot');
+                src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+                  url('../font/FZDBSJT.woff') format('woff'),
+                  url('../font/FZDBSJT.ttf')  format('truetype'),
+                  url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+              }
+            
+.page2 {
+  overflow: auto;
+  background-color: #fef4e2;
+}
+
+.page2 .so-41 {
+  position: absolute;
+  left: 96px;
+  z-index: 41;
+  top: 160px;
+}
+
+.page2 .so-40 {
+  position: absolute;
+  left: 97px;
+  z-index: 40;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 465px;
+  width: 415px;
+}
+
+.page2 .so-39 {
+  position: absolute;
+  left: 97px;
+  z-index: 39;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 610px;
+  width: 393px;
+  letter-spacing: 0.05em;
+}
+
+.page2 .so-38 {
+  position: absolute;
+  left: 588px;
+  z-index: 38;
+  top: 655px;
+}
+
+.page2 .so-37 {
+  position: absolute;
+  left: -7px;
+  z-index: 37;
+  top: 1501px;
+}
+
+.page2 .so-35 {
+  position: absolute;
+  left: 240px;
+  z-index: 35;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 1945px;
+  width: 396px;
+}
+
+.page2 .so-34 {
+  position: absolute;
+  left: 89px;
+  z-index: 34;
+  top: 2254px;
+}
+
+.page2 .so-36 {
+  position: absolute;
+  left: 238px;
+  z-index: 36;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 2176px;
+  width: 406px;
+  letter-spacing: 0.05em;
+}
+
+.page2 .so-33 {
+  position: absolute;
+  left: 96px;
+  z-index: 33;
+  top: 3009px;
+}
+
+.page2 .so-32 {
+  position: absolute;
+  left: 101px;
+  z-index: 32;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 3322px;
+  width: 390px;
+}
+
+.page2 .so-30 {
+  position: absolute;
+  left: 588px;
+  z-index: 30;
+  top: 3753px;
+}
+
+.page2 .so-31 {
+  position: absolute;
+  left: 97px;
+  z-index: 31;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 3459px;
+  width: 395px;
+  letter-spacing: 0.02em;
+}
+
+.page2 .so-29 {
+  position: absolute;
+  left: -7px;
+  z-index: 29;
+  top: 4477px;
+}
+
+.page2 .so-27 {
+  position: absolute;
+  left: 238px;
+  z-index: 27;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 4880px;
+  width: 401px;
+}
+
+.page2 .so-28 {
+  position: absolute;
+  left: 238px;
+  z-index: 28;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 5015px;
+  width: 406px;
+  letter-spacing: 0.05em;
+}
+
+.page2 .so-26 {
+  position: absolute;
+  left: 89px;
+  z-index: 26;
+  top: 5244px;
+}
+
+.page2 .so-25 {
+  position: absolute;
+  left: 234px;
+  z-index: 25;
+  top: 5920px;
+}
+
+.page2 .so-23 {
+  position: absolute;
+  left: 235px;
+  z-index: 23;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 6335px;
+  width: 412px;
+}
+
+.page2 .so-24 {
+  position: absolute;
+  left: 235px;
+  z-index: 24;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 6479px;
+  width: 406px;
+  letter-spacing: 0.05em;
+}
+
+.page2 .so-22 {
+  position: absolute;
+  left: 88px;
+  z-index: 22;
+  top: 6660px;
+}
+
+.page2 .so-21 {
+  position: absolute;
+  left: 96px;
+  z-index: 21;
+  top: 7310px;
+}
+
+.page2 .so-20 {
+  position: absolute;
+  left: 97px;
+  z-index: 20;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 7620px;
+  width: 395px;
+}
+
+.page2 .so-19 {
+  position: absolute;
+  left: 97px;
+  z-index: 19;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 7879px;
+  width: 389px;
+  letter-spacing: 0.02em;
+}
+
+.page2 .so-18 {
+  position: absolute;
+  left: 588px;
+  z-index: 18;
+  top: 7608px;
+}
+
+.page2 .so-17 {
+  position: absolute;
+  left: 234px;
+  z-index: 17;
+  top: 8864px;
+}
+
+.page2 .so-15 {
+  position: absolute;
+  left: 236px;
+  z-index: 15;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 9180px;
+  width: 392px;
+}
+
+.page2 .so-14 {
+  position: absolute;
+  left: 87px;
+  z-index: 14;
+  top: 9171px;
+}
+
+.page2 .so-16 {
+  position: absolute;
+  left: 236px;
+  z-index: 16;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 9350px;
+  width: 406px;
+  letter-spacing: 0.05em;
+}
+
+.page2 .so-13 {
+  position: absolute;
+  left: 98px;
+  z-index: 13;
+  top: 10252px;
+}
+
+.page2 .so-10 {
+  position: absolute;
+  left: 590px;
+  z-index: 10;
+  top: 10691px;
+}
+
+.page2 .so-9 {
+  position: absolute;
+  left: -7px;
+  z-index: 9;
+  top: 11723px;
+}
+
+.page2 .so-7 {
+  position: absolute;
+  left: 237px;
+  z-index: 7;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 12135px;
+  width: 391px;
+}
+
+.page2 .so-6 {
+  position: absolute;
+  left: 89px;
+  z-index: 6;
+  top: 12315px;
+}
+
+.page2 .so-8 {
+  position: absolute;
+  left: 238px;
+  z-index: 8;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 12305px;
+  width: 406px;
+  letter-spacing: 0.05em;
+}
+
+.page2 .so-5 {
+  position: absolute;
+  left: 96px;
+  z-index: 5;
+  top: 13113px;
+}
+
+.page2 .so-2 {
+  position: absolute;
+  left: 588px;
+  z-index: 2;
+  top: 13519px;
+}
+
+.page2 .so-3 {
+  position: absolute;
+  left: 97px;
+  z-index: 3;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 13633px;
+  width: 395px;
+  letter-spacing: 0.1em;
+}
+
+.page2 .so-12 {
+  position: absolute;
+  left: 100px;
+  z-index: 12;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 10545px;
+  width: 392px;
+}
+
+.page2 .so-11 {
+  position: absolute;
+  left: 96px;
+  z-index: 11;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: #bd8726;
+  top: 10679px;
+  width: 395px;
+  letter-spacing: 0.1em;
+}
+
+.page2 .so-4 {
+  position: absolute;
+  left: 98px;
+  z-index: 4;
+  font-size: 41px;
+  line-height: 53px;
+  color: #bd8726;
+  top: 13433px;
+  width: 437px;
+}
+.page3 {
+  background-color: #698844;
+}
+
+.page3 .so-11 {
+  position: absolute;
+  left: 128px;
+  z-index: 11;
+  top: 189px;
+}
+
+.page3 .so-13 {
+  position: absolute;
+  left: 587px;
+  z-index: 13;
+  top: 937px;
+}
+
+.page3 .so-12 {
+  position: absolute;
+  left: 109px;
+  z-index: 12;
+  font-size: 25px;
+  line-height: 50px;
+  color: #fef4e2;
+  top: 908px;
+  width: 406px;
+  letter-spacing: 0.05em;
+}
+
+.page3 .so-3 {
+  position: absolute;
+  left: 132px;
+  z-index: 3;
+  top: 233px;
+}
+
+.page3 .so-7 {
+  position: absolute;
+  left: 254px;
+  z-index: 7;
+  top: 418px;
+}
+
+.page3 .so-8 {
+  position: absolute;
+  left: 381px;
+  z-index: 8;
+  top: 526px;
+}
+
+.page3 .so-10 {
+  position: absolute;
+  left: 132px;
+  z-index: 10;
+  top: 465px;
+}
+
+.page3 .so-9 {
+  position: absolute;
+  left: 556px;
+  z-index: 9;
+  top: 797px;
+}
+
+.page3 .so-4 {
+  position: absolute;
+  left: 131px;
+  z-index: 4;
+  top: 601px;
+}
+
+.page3 .so-5 {
+  position: absolute;
+  left: 111px;
+  z-index: 5;
+  top: 826px;
+}
+
+.page3 .so-6 {
+  position: absolute;
+  left: 244px;
+  z-index: 6;
+  top: 949px;
+}
+.page4 {
+  background-color: #fef4e2;
+}
+
+.page4 .so-4 {
+  position: absolute;
+  left: 215px;
+  z-index: 4;
+  top: 806px;
+}
+
+.page4 .so-3 {
+  position: absolute;
+  left: 215px;
+  z-index: 3;
+  top: 947px;
+}
+
+.page4 .so-2 {
+  position: absolute;
+  left: 274px;
+  z-index: 2;
+  top: 1232px;
+}
+

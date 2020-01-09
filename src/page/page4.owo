@@ -1,0 +1,39 @@
+<template lang="pug">
+.page4
+  .scale-box
+    img.so-4(src="@|page4-4.png|")
+    img.so-3(src="@|page4-3.png|")
+    img.so-2(src="@|page4-2.png|")
+</template>
+
+<script>
+  module.exports = {
+    created: function (params) {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page4 {
+  background-color: #fef4e2;
+}
+.so-4 {
+  position: absolute;
+  left: 215px;
+  z-index: 4;
+  top: 806px
+}
+.so-3 {
+  position: absolute;
+  left: 215px;
+  z-index: 3;
+  top: 947px
+}
+.so-2 {
+  position: absolute;
+  left: 274px;
+  z-index: 2;
+  top: 1232px
+}
+</style>

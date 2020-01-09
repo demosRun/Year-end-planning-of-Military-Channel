@@ -1,0 +1,79 @@
+<template lang="pug">
+.page1
+  .scale-box
+    plug(_src="./src/module/badge.owo" name="badge")
+    img.so-6(src="@|page1-6.png|")
+    img.so-5(src="@|page1-5.png|")
+    img.so-4(src="@|page1-4.png|")
+    img.so-7(src="@|page1-7.png|")
+    img.so-3(src="@|page1-3.png|")
+    img.so-2(src="@|page1-2.png|")
+</template>
+
+<script>
+  module.exports = {
+    created: function (params) {
+      owo.tool.touch({
+        el: this.$el,
+        end: function (e) {
+          if (e.swipe[1] < -100) {
+            owo.go('page2', '', '', '', '', true)
+          }
+        }
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page1 {
+  background-color: #fef4e2;
+}
+.so-6 {
+  position: absolute;
+  left: 255px;
+  z-index: 6;
+  top: 189px
+}
+.so-5 {
+  position: absolute;
+  left: 127px;
+  z-index: 5;
+  top: 257px
+}
+.so-4 {
+  position: absolute;
+  left: 264px;
+  z-index: 4;
+  top: 328px
+}
+.so-7 {
+  position: absolute;
+  left: 282px;
+  z-index: 7;
+  top: 854px
+}
+.so-3 {
+  position: absolute;
+  left: 100px;
+  z-index: 3;
+  top: 995px
+}
+.so-2 {
+  position: absolute;
+  left: 150px;
+  z-index: 2;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 23px;
+  line-height: 40px;
+  color: rgba(211, 38, 59, 1.00);
+  top: 1033px;
+  width: 454px
+}
+.badge {
+  width: 600px;
+  height: 600px;
+  top: -10%;
+}
+</style>

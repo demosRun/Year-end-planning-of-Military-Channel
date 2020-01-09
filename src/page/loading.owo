@@ -1,0 +1,85 @@
+<template lang="pug">
+.loading-box
+  plug(_src="./src/module/badge.owo" name="badge")
+  .num 100%
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      imgList: [
+        '@|page1-3.png|',
+        '@|page1-4.png|',
+        '@|page1-5.png|',
+        '@|page1-6.png|',
+        '@|page1-7.png|',
+      ]
+    },
+    show: function () {
+      const mum = owo.query('.num')[0]
+      this.preloadImages(this.data.imgList, (e) => {
+        setTimeout(() => {
+          owo.go('page1', '', '', '', '', true)
+        }, 800)
+      }, (num) => {
+        mum.innerHTML = num + '%'
+      })
+    },
+    preloadImage: function (src, successFn) {
+      var image = new Image()
+      image.src = src
+      image.onload = function () {
+        successFn && successFn(src)
+      }
+      image.onerror = function (error) {
+        successFn && successFn(src)
+      }
+    },
+    preloadImages: function (srcs, doneFn, progressFn) {
+      if (!Array.isArray(srcs)) {
+        console.log('第一个参数只能是一个数组')
+      } else {
+        var allCount = srcs.length
+        var doneCount = 0
+        srcs.forEach((srcItem) => {
+          this.preloadImage(srcItem, function () {
+            doneCount++
+            progressFn && progressFn(Math.ceil(100 * doneCount / allCount))
+            if (doneCount === allCount) {
+              doneFn && doneFn()
+            }
+          })
+        })
+      }
+    }
+  }
+</script>
+
+
+<style lang="less">
+.loading-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10%;
+  bottom: 0;
+  margin: auto;
+  .badge {
+    top: -20%;
+  }
+  .num {
+    color: #d3263b;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+  }
+}
+</style>

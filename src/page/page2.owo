@@ -1,0 +1,400 @@
+<template lang="pug">
+.page2
+  .scale-width-box
+    img.so-41(src="@|page2-41.png|")
+    p.so-40(font="FZDBSJT.TTF") 万吨级驱逐舰“南昌”<br>号首次公开亮相<br>
+    p.so-39 &emsp;&emsp;中国人民解放军海军成立70周年，各国海军舰艇海上阅兵仪式在青岛及其附近海空域举行，我国055型万吨级驱逐舰“南昌”号首次公开亮相。<br>&emsp;&emsp;055型舰是我国完全自主研制的新型万吨级驱逐舰，是海军排水量最大的驱逐舰。对于完善海军装备体系结构、建设强大的现代化海军、实现中国梦强军梦具有重要意义。
+    img.so-38(src="@|page2-38.png|")
+    img.so-37(src="@|page2-37.png|")
+    p.so-35(font="FZDBSJT.TTF") 我国首次固体运载火<br>箭海上发射技术试验<br>取得成功
+    img.so-34(src="@|page2-34.png|")
+    p.so-36 &emsp;&emsp;我国在黄海海域用长征十一号海射型固体运载火箭将技术试验卫星捕风一号A、B星及5颗商业卫星顺利送入预定轨道，试验取得圆满成功。<br>&emsp;&emsp;这是我国首次在海上实施运载火箭发射技术试验，探索了我国海上发射管理模式，验证了海上发射能力。<br>
+    img.so-33(src="@|page2-33.png|")
+    p.so-32(font="FZDBSJT.TTF") 中俄空军首次联合空<br>中战略巡航<br>
+    img.so-30(src="@|page2-30.png|")
+    p.so-31 &emsp;&emsp;中国与俄罗斯两国空军在东北亚地区组织实施首次联合空中战略巡航，中方派出2架轰-6K飞机，与俄方2架图-95飞机混合编队，在日本海、东海有关空域按既定航线组织联合巡航。<br>&emsp;&emsp;此次联合巡航旨在深化和发展中俄新时代全面战略协作伙伴关系，进一步提升中俄两军战略协作水平和联合行动能力，共同维护全球战略稳定。此次行动是中俄两军年度合作计划内项目，不针对第三方。
+    img.so-29(src="@|page2-29.png|")
+    p.so-27(font="FZDBSJT.TTF") 空军歼-20战机首次7<br>机同框
+    p.so-28 &emsp;&emsp;空军发布励志宣传片《蓝天有我 感恩有您》，展现新时代空军飞行员牢记初心使命、提高打赢能力的情怀和风采，歼-20战机7机同框首次亮相。<br>&emsp;&emsp;昭示越来越多的“国字号”新型战机投入新时代练兵备战，高飞远航、守卫蓝天。
+    img.so-26(src="@|page2-26.png|")
+    img.so-25(src="@|page2-25.png|")
+    p.so-23(font="FZDBSJT.TTF") 中国首次确认6位归国<br>志愿军烈士遗骸身份<br>
+    p.so-24 &emsp;&emsp;沈阳抗美援朝烈士陵园，退役军人事务部举行认亲仪式，6名志愿军烈士确认了身份，与亲人“团聚”。<br>&emsp;&emsp;是我国首次通过DNA技术手段确认无名志愿军烈士的身份。充分表明了祖国和人民一直没有忘记那些无名英雄，也永远不会忘记那些埋葬在异国他乡的英雄儿女。
+    img.so-22(src="@|page2-22.png|")
+    img.so-21(src="@|page2-21.png|")
+    p.so-20(font="FZDBSJT.TTF") 世界军运会首次进入<br>中国时间
+    p.so-19 &emsp;&emsp;第七届世界军人运动在江城武汉举行，来自109个国家的9300余名军体健儿同场竞技、增进友谊。<br>&emsp;&emsp;世界军运会首次进入中国时间，这是我国第一次承办的综合性国际军事体育赛事，也是继北京奥运会后我国举办的规模最大的国际体育盛会。 <br>
+    img.so-18(src="@|page2-18.png|")
+    img.so-17(src="@|page2-17.png|")
+    p.so-15(font="FZDBSJT.TTF") 中俄南非首次在非洲<br>南部举行海上联演<br>
+    img.so-14(src="@|page2-14.png|")
+    p.so-16 &emsp;&emsp;11月24日至29日，中国、俄罗斯、南非三国海上联合演习在南非开普敦近岸海空域举行。此次联演是上述三国海军首次在非洲南部海域举行海上联合演习。<br>&emsp;&emsp;此次联演有助于深化三国海军间的交流合作，提高共同应对海上安全威胁能力，展示共同维护地区海上和平稳定的决心意志、积极推动构建“海洋命运共同体”的良好意愿和强大能力。<br>
+    img.so-13(src="@|page2-13.png|")
+    p.so-12(font="FZDBSJT.TTF") 军事院校体系重塑后<br>首次全军院校长集训 <br>
+    p.so-11 &emsp;&emsp;156位来自全军院校的院校长、教务处长和军委、军兵种两级机关业务局领导，由各大单位分管领导带头，集结在国防大学红山口教学区，围绕学习贯彻习主席军事教育重要论述、深化军队院校改革创新、推进院校建设加快转型发展等问题，展开为期12天的院校长集训。<br>&emsp;&emsp;抓院校就是抓战斗力，谋教育就是谋未来，出人才就是出政绩。今天的学员将是2035年现代化军队的中坚骨干，是未来我国军队年轻的基石。
+    img.so-10(src="@|page2-10.png|")
+    img.so-9(src="@|page2-9.png|")
+    p.so-7(font="FZDBSJT.TTF") 我国首艘国产航母山<br>东舰入列
+    img.so-6(src="@|page2-6.png|")
+    p.so-8 &emsp;&emsp;我国第一艘国产航空母舰山东舰在海南三亚某军港交付海军。<br>&emsp;&emsp;山东舰立足国内自主设计建造，重点解决了航母总体设计、船体建造、主动力装备国产化研制等问题，提高了综合作战效能和综合保障水平。
+    img.so-5(src="@|page2-5.png|")
+    p.so-4(font="FZDBSJT.TTF") 中俄伊朗首次举行联合<br>军演
+    img.so-2(src="@|page2-2.png|")
+    p.so-3 &emsp;&emsp;根据中国、俄罗斯、伊朗三国军队达成的共识，中俄伊海上联合演习于12月27日至30日在阿曼湾地区举行。中国海军派“西宁”号导弹驱逐舰参加。<br>&emsp;&emsp;此次演习旨在深化三国海军之间的交流合作，展示三方共同维护世界和平与海上安全、积极构建“海洋命运共同体”的良好意愿和能力。
+    
+</template>
+
+<script>
+  module.exports = {
+    created: function (params) {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page2 {
+  overflow: auto;
+  background-color: #fef4e2;
+}
+.so-41 {
+  position: absolute;
+  left: 96px;
+  z-index: 41;
+  top: 160px
+}
+.so-40 {
+  position: absolute;
+  left: 97px;
+  z-index: 40;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 465px;
+  width: 415px
+}
+.so-39 {
+  position: absolute;
+  left: 97px;
+  z-index: 39;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 610px;
+  width: 393px;
+  letter-spacing: 0.05em
+}
+.so-38 {
+  position: absolute;
+  left: 588px;
+  z-index: 38;
+  top: 655px
+}
+.so-37 {
+  position: absolute;
+  left: -7px;
+  z-index: 37;
+  top: 1501px
+}
+.so-35 {
+  position: absolute;
+  left: 240px;
+  z-index: 35;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 1945px;
+  width: 396px
+}
+.so-34 {
+  position: absolute;
+  left: 89px;
+  z-index: 34;
+  top: 2254px
+}
+.so-36 {
+  position: absolute;
+  left: 238px;
+  z-index: 36;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 2176px;
+  width: 406px;
+  letter-spacing: 0.05em
+}
+.so-33 {
+  position: absolute;
+  left: 96px;
+  z-index: 33;
+  top: 3009px
+}
+.so-32 {
+  position: absolute;
+  left: 101px;
+  z-index: 32;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 3322px;
+  width: 390px
+}
+.so-30 {
+  position: absolute;
+  left: 588px;
+  z-index: 30;
+  top: 3753px
+}
+.so-31 {
+  position: absolute;
+  left: 97px;
+  z-index: 31;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 3459px;
+  width: 395px;
+  letter-spacing: 0.02em
+}
+.so-29 {
+  position: absolute;
+  left: -7px;
+  z-index: 29;
+  top: 4477px
+}
+.so-27 {
+  position: absolute;
+  left: 238px;
+  z-index: 27;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 4880px;
+  width: 401px
+}
+.so-28 {
+  position: absolute;
+  left: 238px;
+  z-index: 28;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 5015px;
+  width: 406px;
+  letter-spacing: 0.05em
+}
+.so-26 {
+  position: absolute;
+  left: 89px;
+  z-index: 26;
+  top: 5244px
+}
+.so-25 {
+  position: absolute;
+  left: 234px;
+  z-index: 25;
+  top: 5920px
+}
+.so-23 {
+  position: absolute;
+  left: 235px;
+  z-index: 23;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 6335px;
+  width: 412px
+}
+.so-24 {
+  position: absolute;
+  left: 235px;
+  z-index: 24;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 6479px;
+  width: 406px;
+  letter-spacing: 0.05em
+}
+.so-22 {
+  position: absolute;
+  left: 88px;
+  z-index: 22;
+  top: 6660px
+}
+.so-21 {
+  position: absolute;
+  left: 96px;
+  z-index: 21;
+  top: 7310px
+}
+.so-20 {
+  position: absolute;
+  left: 97px;
+  z-index: 20;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 7620px;
+  width: 395px
+}
+.so-19 {
+  position: absolute;
+  left: 97px;
+  z-index: 19;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 7879px;
+  width: 389px;
+  letter-spacing: 0.02em
+}
+.so-18 {
+  position: absolute;
+  left: 588px;
+  z-index: 18;
+  top: 7608px
+}
+.so-17 {
+  position: absolute;
+  left: 234px;
+  z-index: 17;
+  top: 8864px
+}
+.so-15 {
+  position: absolute;
+  left: 236px;
+  z-index: 15;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 9180px;
+  width: 392px
+}
+.so-14 {
+  position: absolute;
+  left: 87px;
+  z-index: 14;
+  top: 9171px
+}
+.so-16 {
+  position: absolute;
+  left: 236px;
+  z-index: 16;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 9350px;
+  width: 406px;
+  letter-spacing: 0.05em
+}
+.so-13 {
+  position: absolute;
+  left: 98px;
+  z-index: 13;
+  top: 10252px
+}
+.so-10 {
+  position: absolute;
+  left: 590px;
+  z-index: 10;
+  top: 10691px
+}
+.so-9 {
+  position: absolute;
+  left: -7px;
+  z-index: 9;
+  top: 11723px
+}
+.so-7 {
+  position: absolute;
+  left: 237px;
+  z-index: 7;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 12135px;
+  width: 391px
+}
+.so-6 {
+  position: absolute;
+  left: 89px;
+  z-index: 6;
+  top: 12315px
+}
+.so-8 {
+  position: absolute;
+  left: 238px;
+  z-index: 8;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 12305px;
+  width: 406px;
+  letter-spacing: 0.05em
+}
+.so-5 {
+  position: absolute;
+  left: 96px;
+  z-index: 5;
+  top: 13113px
+}
+.so-2 {
+  position: absolute;
+  left: 588px;
+  z-index: 2;
+  top: 13519px
+}
+.so-3 {
+  position: absolute;
+  left: 97px;
+  z-index: 3;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 13633px;
+  width: 395px;
+  letter-spacing: 0.1em
+}
+.so-12 {
+  position: absolute;
+  left: 100px;
+  z-index: 12;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 10545px;
+  width: 392px
+}
+.so-11 {
+  position: absolute;
+  left: 96px;
+  z-index: 11;
+  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 10679px;
+  width: 395px;
+  letter-spacing: 0.1em
+}
+.so-4 {
+  position: absolute;
+  left: 98px;
+  z-index: 4;
+  font-size: 41px;
+  line-height: 53px;
+  color: rgba(189, 135, 38, 1.00);
+  top: 13433px;
+  width: 437px
+}
+</style>

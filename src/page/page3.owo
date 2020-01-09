@@ -1,0 +1,101 @@
+<template lang="pug">
+.page3
+  .scale-box
+    img.so-11.group-1(src="@|page3-11.png|")
+    img.so-13.group-1(src="@|page3-13.png|")
+    p.so-12.group-1 此次阅兵是中国特色社会主义进入新时代的首次国庆阅兵，也是人民军队改革重塑后的首次集中亮相。旨在宣示人民军队听党指挥的政治信念，反映全力推进改革强军的巨大成就，展示履行新时代使命任务的综合能力，展现建设世界一流军队的坚定自信。<br><br><br><br><br>
+    img.so-3.group-2(width="415" height="173" src="@|page3-3.png|")
+    img.so-7.group-2(width="333" height="93" src="@|page3-7.png|")
+    img.so-8.group-2(width="194" height="55" src="@|page3-8.png|")
+    img.so-10.group-2(width="83" height="82" src="@|page3-10.png|")
+    img.so-9.group-2(width="61" height="60" src="@|page3-9.png|")
+    img.so-4.group-2(width="456" height="185" src="@|page3-4.png|")
+    img.so-5.group-2(width="412" height="123" src="@|page3-5.png|")
+    img.so-6.group-2(width="367" height="155" src="@|page3-6.png|")
+
+</template>
+
+<script>
+  module.exports = {
+    created: function (params) {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page3 {
+  background-color: #698844;
+}
+.so-11 {
+  position: absolute;
+  left: 128px;
+  z-index: 11;
+  top: 189px
+}
+.so-13 {
+  position: absolute;
+  left: 587px;
+  z-index: 13;
+  top: 937px
+}
+.so-12 {
+  position: absolute;
+  left: 109px;
+  z-index: 12;
+  font-size: 25px;
+  line-height: 50px;
+  color: rgba(254, 244, 226, 1.00);
+  top: 908px;
+  width: 406px;
+  letter-spacing: 0.05em
+}
+.so-3 {
+  position: absolute;
+  left: 132px;
+  z-index: 3;
+  top: 233px
+}
+.so-7 {
+  position: absolute;
+  left: 254px;
+  z-index: 7;
+  top: 418px
+}
+.so-8 {
+  position: absolute;
+  left: 381px;
+  z-index: 8;
+  top: 526px
+}
+.so-10 {
+  position: absolute;
+  left: 132px;
+  z-index: 10;
+  top: 465px
+}
+.so-9 {
+  position: absolute;
+  left: 556px;
+  z-index: 9;
+  top: 797px
+}
+.so-4 {
+  position: absolute;
+  left: 131px;
+  z-index: 4;
+  top: 601px
+}
+.so-5 {
+  position: absolute;
+  left: 111px;
+  z-index: 5;
+  top: 826px
+}
+.so-6 {
+  position: absolute;
+  left: 244px;
+  z-index: 6;
+  top: 949px
+}
+</style>
