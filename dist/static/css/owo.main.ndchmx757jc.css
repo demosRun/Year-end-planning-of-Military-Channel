@@ -138,7 +138,7 @@ li {
 }
 
 .loading-box .badge {
-  top: -20%;
+  top: 0%;
 }
 
 .loading-box .num {
@@ -146,7 +146,7 @@ li {
   font-size: 20px;
   text-align: center;
   position: absolute;
-  top: 10%;
+  top: 25%;
   bottom: 0;
   margin: auto;
   height: 30px;
@@ -154,7 +154,21 @@ li {
   left: 0;
   right: 0;
   font-weight: bold;
+}.owo-animation-bottomToTopHide {
+  -webkit-animation: bottomToTopHide 1.5s linear infinite;
+  animation: bottomToTopHide 1.5s linear infinite;
 }
+
+@-webkit-keyframes bottomToTopHide {
+  0% { -webkit-transform: translateY(0px); transform: translateY(0px);}
+  100% {-webkit-transform: translateY(-30px);transform: translateY(-30px);opacity: 0;}
+}
+
+@keyframes bottomToTopHide {
+  0% { -webkit-transform: translateY(0px); transform: translateY(0px);}
+  100% {-webkit-transform: translateY(-30px);transform: translateY(-30px);opacity: 0;}
+}
+
 .page1 {
   background-color: #fef4e2;
 }
@@ -184,14 +198,14 @@ li {
   position: absolute;
   left: 282px;
   z-index: 7;
-  top: 854px;
+  top: 820px;
 }
 
 .page1 .so-3 {
   position: absolute;
   left: 100px;
   z-index: 3;
-  top: 995px;
+  top: 900px;
 }
 
 .page1 .so-2 {
@@ -202,14 +216,14 @@ li {
   font-size: 23px;
   line-height: 40px;
   color: #d3263b;
-  top: 1033px;
+  top: 950px;
   width: 454px;
 }
 
 .page1 .badge {
-  width: 600px;
-  height: 600px;
-  top: -10%;
+  width: 500px;
+  height: 500px;
+  top: -15%;
 }
               [font="FZDBSJT.TTF"] {
                 font-family: 'FZDBSJT';
@@ -223,8 +237,191 @@ li {
                   url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
               }
             
+@-webkit-keyframes circleAnimationIn {
+  0% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+            
+@keyframes circleAnimationIn {
+  0% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes circleAnimationOut {
+  0% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes circleAnimationOut {
+  0% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.ripple-box {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+/* 保持大小不变的小圆点 */
+
+.ripple-box .dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background-color: #dbe6b2;
+  /* 实心圆 ，如果没有这个就是一个小圆圈 */
+  z-index: 2;
+}
+
+/* 产生动画（向外扩散变大）的圆圈 第一个圆 */
+
+.ripple-box .inner-circle {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #dbe6b2;
+  -webkit-animation: circleAnimationIn 2s ease-out;
+  animation: circleAnimationIn 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  box-shadow: 2px 2px 30px #dbe6b2;
+}
+
+/* 产生动画（向外扩散变大）的圆圈 第二个圆 */
+
+.ripple-box .outer-circle {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #dbe6b2;
+  -webkit-animation: circleAnimationOut 2s ease-out;
+  animation: circleAnimationOut 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  box-shadow: 2px 2px 30px #dbe6b2;
+}
 .page2 {
   overflow: auto;
+  overflow-x: hidden;
   background-color: #fef4e2;
 }
 
@@ -250,7 +447,6 @@ li {
   position: absolute;
   left: 97px;
   z-index: 39;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -295,7 +491,6 @@ li {
   position: absolute;
   left: 238px;
   z-index: 36;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -333,7 +528,6 @@ li {
   position: absolute;
   left: 97px;
   z-index: 31;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -364,7 +558,6 @@ li {
   position: absolute;
   left: 238px;
   z-index: 28;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -402,7 +595,6 @@ li {
   position: absolute;
   left: 235px;
   z-index: 24;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -440,7 +632,6 @@ li {
   position: absolute;
   left: 97px;
   z-index: 19;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -485,7 +676,6 @@ li {
   position: absolute;
   left: 236px;
   z-index: 16;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -537,7 +727,6 @@ li {
   position: absolute;
   left: 238px;
   z-index: 8;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -564,7 +753,6 @@ li {
   position: absolute;
   left: 97px;
   z-index: 3;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -588,7 +776,6 @@ li {
   position: absolute;
   left: 96px;
   z-index: 11;
-  font-family: 'FZLTHPro--GB1-4', 'AdobeInvisFont', 'AdobeHeitiStd-Regular';
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
@@ -606,6 +793,25 @@ li {
   color: #bd8726;
   top: 13433px;
   width: 437px;
+}
+
+.page2 .next-box {
+  color: #d3263b;
+  bottom: auto;
+  top: 14208px;
+}
+
+.page2 .next-box .dot {
+  background-color: #bd8726;
+}
+
+.page2 .next-box .inner-circle,
+.page2 .next-box .outer-circle {
+  border: 2px solid #bd8726;
+}
+
+.page2 .next-box p {
+  color: #bd8726;
 }
 .page3 {
   background-color: #698844;
@@ -636,84 +842,274 @@ li {
   width: 406px;
   letter-spacing: 0.05em;
 }
+.page4 {
+  background-color: #698844;
+}
 
-.page3 .so-3 {
+.page4 .so-3 {
   position: absolute;
   left: 132px;
   z-index: 3;
   top: 233px;
 }
 
-.page3 .so-7 {
+.page4 .so-7 {
   position: absolute;
   left: 254px;
   z-index: 7;
   top: 418px;
 }
 
-.page3 .so-8 {
+.page4 .so-8 {
   position: absolute;
   left: 381px;
   z-index: 8;
   top: 526px;
 }
 
-.page3 .so-10 {
+.page4 .so-10 {
   position: absolute;
   left: 132px;
   z-index: 10;
   top: 465px;
 }
 
-.page3 .so-9 {
+.page4 .so-9 {
   position: absolute;
   left: 556px;
   z-index: 9;
   top: 797px;
 }
 
-.page3 .so-4 {
+.page4 .so-4 {
   position: absolute;
   left: 131px;
   z-index: 4;
   top: 601px;
 }
 
-.page3 .so-5 {
+.page4 .so-5 {
   position: absolute;
   left: 111px;
   z-index: 5;
   top: 826px;
 }
 
-.page3 .so-6 {
+.page4 .so-6 {
   position: absolute;
   left: 244px;
   z-index: 6;
   top: 949px;
 }
-.page4 {
+
+.page4 .so-2 {
+  position: absolute;
+  left: 77px;
+  z-index: 2;
+  top: 1132px;
+}
+.page5 {
   background-color: #fef4e2;
 }
 
-.page4 .so-4 {
+.page5 .so-4 {
   position: absolute;
   left: 215px;
   z-index: 4;
   top: 806px;
 }
 
-.page4 .so-3 {
+.page5 .so-3 {
   position: absolute;
   left: 215px;
   z-index: 3;
   top: 947px;
 }
 
-.page4 .so-2 {
+.page5 .so-2 {
   position: absolute;
   left: 274px;
   z-index: 2;
   top: 1232px;
+}
+
+.page5 .badge {
+  top: -37%;
+  width: 600px;
+  height: 600px;
+}
+
+.page5 .share-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+}
+
+.page5 .share-box img {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* 页面切换动画 */
+.o-page-moveToTop {
+	-webkit-animation: moveToTop .6s ease both;
+	-moz-animation: moveToTop .6s ease both;
+	animation: moveToTop .6s ease both;
+}
+
+@-webkit-keyframes moveToTop {
+	to { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveToTop {
+	to { -moz-transform: translateY(-100%); }
+}
+@keyframes moveToTop {
+	to { transform: translateY(-100%); }
+}
+.o-page-scaleUp {
+	-webkit-animation: scaleUp .7s ease both;
+	-moz-animation: scaleUp .7s ease both;
+	animation: scaleUp .7s ease both;
+}
+
+@-webkit-keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleUp {
+	from { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
+}
+.o-page-moveToBottom {
+	-webkit-animation: moveToBottom .6s ease both;
+	-moz-animation: moveToBottom .6s ease both;
+	animation: moveToBottom .6s ease both;
+}
+
+@-webkit-keyframes moveToBottom {
+	to { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveToBottom {
+	to { -moz-transform: translateY(100%); }
+}
+@keyframes moveToBottom {
+	to { transform: translateY(100%); }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-180vw, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(180vw, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
 }
 

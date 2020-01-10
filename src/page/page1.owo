@@ -1,6 +1,8 @@
 <template lang="pug">
 .page1
   .scale-box
+    //- 上划提示
+    img.upward(src="@|upward.png|" o-animation="bottomToTopHide")
     plug(_src="./src/module/badge.owo" name="badge")
     img.so-6(src="@|page1-6.png|")
     img.so-5(src="@|page1-5.png|")
@@ -17,7 +19,8 @@
         el: this.$el,
         end: function (e) {
           if (e.swipe[1] < -100) {
-            owo.go('page2', '', '', '', '', true)
+            owo.go('page2', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true)
+            new Audio("@|bg.mp3|").play()
           }
         }
       })
@@ -52,13 +55,13 @@
   position: absolute;
   left: 282px;
   z-index: 7;
-  top: 854px
+  top: 820px
 }
 .so-3 {
   position: absolute;
   left: 100px;
   z-index: 3;
-  top: 995px
+  top: 900px
 }
 .so-2 {
   position: absolute;
@@ -68,12 +71,13 @@
   font-size: 23px;
   line-height: 40px;
   color: rgba(211, 38, 59, 1.00);
-  top: 1033px;
+  top: 950px;
   width: 454px
 }
 .badge {
-  width: 600px;
-  height: 600px;
-  top: -10%;
+  width: 500px;
+  height: 500px;
+  top: -15%;
 }
+
 </style>

@@ -37,7 +37,7 @@ function getScale () {
       scaleBox.style.height = rollH * scale + 'px'
       scaleBox.style.transform = `scale(${scale}, ${scale})`
       // console.log(window.innerHeight, deviseH * scale)
-      scaleBox.style.transformOrigin = `0 ${(window.innerHeight - deviseH * scale) + 'px' } 0`
+      scaleBox.style.transformOrigin = `0 0 0`
     }
   }
 }

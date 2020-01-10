@@ -13,6 +13,34 @@
         '@|page1-5.png|',
         '@|page1-6.png|',
         '@|page1-7.png|',
+        '@|page2-2.png|',
+        '@|page2-5.png|',
+        '@|page2-9.png|',
+        '@|page2-10.png|',
+        '@|page2-13.png|',
+        '@|page2-14.png|',
+        '@|page2-17.png|',
+        '@|page2-18.png|',
+        '@|page2-21.png|',
+        '@|page2-25.png|',
+        '@|page2-26.png|',
+        '@|page2-29.png|',
+        '@|page2-30.png|',
+        '@|page2-33.png|',
+        '@|page2-34.png|',
+        '@|page2-37.png|',
+        '@|page2-38.png|',
+        '@|page2-41.png|',
+        '@|page3-4.png|',
+        '@|page3-5.png|',
+        '@|page3-6.png|',
+        '@|page3-7.png|',
+        '@|page3-8.png|',
+        '@|page3-9.png|',
+        '@|page3-10.png|',
+        '@|page3-11.png|',
+        '@|page3-12.png|',
+        '@|page3-13.png|',
       ]
     },
     show: function () {
@@ -65,14 +93,14 @@
   bottom: 0;
   margin: auto;
   .badge {
-    top: -20%;
+    top: 0%;
   }
   .num {
     color: #d3263b;
     font-size: 20px;
     text-align: center;
     position: absolute;
-    top: 10%;
+    top: 25%;
     bottom: 0;
     margin: auto;
     height: 30px;

@@ -65,6 +65,9 @@
 	}, {
 		"name": "main",
 		"src": "./src/main.js"
+	}, {
+		"name": "lax",
+		"src": "./src/resource/lax.min.js"
 	}],
 	"styleList": [{
 		"name": "main",
@@ -86,6 +89,9 @@
 	}, {
 		"name": "page4",
 		"src": "./src/page/page4.owo"
+	}, {
+		"name": "page5",
+		"src": "./src/page/page5.owo"
 	}],
 	"mode": {
 		"dev": {
