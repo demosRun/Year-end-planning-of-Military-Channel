@@ -1,4 +1,4 @@
-// Fri Jan 10 2020 15:53:37 GMT+0800 (GMT+08:00)
+// Tue Jan 14 2020 09:54:21 GMT+0800 (GMT+08:00)
 var owo = {tool: {},state: {},};
 /* 方法合集 */
 var _owo = {}
@@ -67,15 +67,23 @@ _owo._run = function (eventFor, event, newPageFunction) {
     newPageFunction.$target = event.target
     newPageFunction[eventForCopy].apply(newPageFunction, parameterArr)
   } else {
-    (function (temp) {
-      try {return eval(temp)} catch (error) {return undefined}
-    }).apply(newPageFunction, [eventFor])
+    shaheRun.apply(newPageFunction, [eventFor])
   }
 }
 
 _owo.bindEvent = function (eventName, eventFor, tempDom, moudleScript) {
   tempDom['on' + eventName] = function(event) {
     _owo._run(eventFor, event || this, moudleScript)
+  }
+}
+
+// 沙盒运行
+function shaheRun (code) {
+  try {
+    return eval(code)
+  } catch (error) {
+    console.error(error)
+    return undefined
   }
 }
 
@@ -92,6 +100,7 @@ _owo.handleEvent = function (moudleScript) {
         var attribute = tempDom.attributes[ind]
         // ie不支持startsWith
         var eventFor = attribute.textContent || attribute.value
+        eventFor = eventFor.replace(/ /g, '')
         // 判断是否为owo的事件
         if (new RegExp("^o-").test(attribute.name)) {
           var eventName = attribute.name.slice(2)
@@ -108,13 +117,7 @@ _owo.handleEvent = function (moudleScript) {
               break
             }
             case 'show': {
-              var eventFor = attribute.textContent || attribute.value
-              // 初步先简单处理吧
-              var temp = eventFor.replace(/ /g, '')
-              function tempRun (temp) {
-                return eval(temp)
-              }
-              if (tempRun.apply(moudleScript, [temp])) {
+              if (shaheRun.apply(moudleScript, [eventFor])) {
                 tempDom.style.display = ''
               } else {
                 tempDom.style.display = 'none'
@@ -122,14 +125,38 @@ _owo.handleEvent = function (moudleScript) {
               break
             }
             case 'html': {
-              var temp = eventFor.replace(/ /g, '')
-              tempDom.innerHTML = (function (temp) {
-                try {
-                  return eval(temp)
-                } catch (error) {
-                  return undefined
-                }
-              }).apply(moudleScript, [temp])
+              tempDom.innerHTML = shaheRun.apply(moudleScript, [eventFor])
+              break
+            }
+            // 处理o-value
+            case 'value': {
+              var value = shaheRun.apply(moudleScript, [eventFor])
+              switch (tempDom.tagName) {
+                case 'INPUT':
+                  switch (tempDom.getAttribute('type')) {
+                    case 'number':
+                      if (value == undefined) value = ''
+                      tempDom.value = value
+                      tempDom.oninput = function (e) {
+                        shaheRun.apply(moudleScript, [eventFor + '=' + e.target.value])
+                      }
+                      break;
+                    case 'text':
+                      if (value == undefined) value = ''
+                      tempDom.value = value
+                      tempDom.oninput = function (e) {
+                        shaheRun.apply(moudleScript, [eventFor + '="' + e.target.value + '"'])
+                      }
+                      break;
+                    case 'checkbox':
+                      tempDom.checked = Boolean(value)
+                      tempDom.onclick = function (e) {
+                        shaheRun.apply(moudleScript, [eventFor + '=' + tempDom.checked])
+                      }
+                      break;
+                  }
+                  break;
+              }
               break
             }
             default: {
@@ -149,7 +176,19 @@ _owo.handleEvent = function (moudleScript) {
       for (var i = 0; i < tempDom.children.length; i++) {
         // 获取子节点实例
         var childrenDom = tempDom.children[i]
-        if (!childrenDom.hasAttribute('template')) {
+        // o-if处理
+        var ifValue = childrenDom.getAttribute('o-if')
+        if (ifValue) {
+          var temp = ifValue.replace(/ /g, '')
+          var show = shaheRun.apply(moudleScript, [temp])
+          if (!show) {
+            childrenDom.style.display = 'none'
+            return
+          } else {
+            childrenDom.style.display = ''
+          }
+        }
+        if (!childrenDom.hasAttribute('template') && !childrenDom.hasAttribute('view')) {
           recursion(childrenDom)
         }
       }
@@ -308,11 +347,6 @@ _owo.showPage = function() {
   owo.entry = document.querySelector('[template]').getAttribute('template')
   // 取出URL地址判断当前所在页面
   var pageArg = _owo.getarg(window.location.hash)
-  
-  if (pageArg !== null) {
-    window.location.href = ''
-    return
-  }
   
   
 
@@ -555,34 +589,85 @@ owo.tool.change = function (environment, obj) {
       environment.data[key] = value
     }
   }
-  
-  var showList = environment.$el.querySelectorAll('[o-show]')
-  for (var ind = 0; ind < showList.length; ind++) {
-    var showDom = showList[ind]
-    var temp = showDom.getAttribute('o-show').replace(/ /g, '')
-    function tempRun (temp) {
-      return eval(temp)
-    }
-    if (tempRun.apply(environment, [temp])) {
-      showDom.style.display = ''
-    } else {
-      showDom.style.display = 'none'
-    }
-  }
-  var valueList = environment.$el.querySelectorAll('[o-value]')
-  for (var ind = 0; ind < valueList.length; ind++) {
-    var valueDom = valueList[ind]
-    var temp = valueDom.getAttribute('o-value').replace(/ /g, '')
-    const value = (function (temp) {
-      try {
+  // 递归
+  function recursion(el) {
+    // 判断o-if
+    var ifValue = el.getAttribute('o-if')
+    if (ifValue) {
+      
+      var temp = ifValue.replace(/ /g, '')
+      function tempRun (temp) {
         return eval(temp)
-      } catch (error) {
-        return undefined
       }
-    }).apply(environment, [temp])
-    // console.log(value)
-    valueDom.value = value
+      if (Boolean(tempRun.apply(environment, [temp]))) {
+        console.log('回复')
+        el.style.display = ''
+      } else {
+        el.style.display = 'none'
+        return
+      }
+    }
+    // 判断o-show
+    var showValue = el.getAttribute('o-show')
+    if (showValue) {
+      var temp = showValue.replace(/ /g, '')
+      function tempRun (temp) {
+        return eval(temp)
+      }
+      if (tempRun.apply(environment, [temp])) {
+        el.style.display = ''
+      } else {
+        el.style.display = 'none'
+      }
+    }
+    var valueValue = el.getAttribute('o-value')
+    if (valueValue) {
+      var temp = valueValue.replace(/ /g, '')
+      const value = (function (temp) {
+        try {
+          return eval(temp)
+        } catch (error) {
+          return undefined
+        }
+      }).apply(environment, [temp])
+      switch (el.tagName) {
+        case 'INPUT':
+          switch (el.getAttribute('type')) {
+            case 'text':
+              el.value = value
+              break;
+            case 'checkbox':
+              el.checked = Boolean(value)
+              break;
+          }
+          break;
+      }
+      
+    }
+    var htmlValue = el.getAttribute('o-html')
+    if (htmlValue) {
+      var temp = htmlValue.replace(/ /g, '')
+      const value = (function (temp) {
+        try {
+          return eval(temp)
+        } catch (error) {
+          return undefined
+        }
+      }).apply(environment, [temp])
+      // console.log(value)
+      temp.innerHTML = value
+    }
+    // 判断元素是否还属于当前模块
+    if (!el.getAttribute('view') && !el.getAttribute('template')) {
+      // 递归子元素
+      for (let index = 0; index < el.children.length; index++) {
+        const element = el.children[index]
+        recursion(element)
+      }
+    }
+    
   }
+  recursion(environment.$el)
   for (var key in environment.template) {
     const templateItem = environment.template[key]
     for (var key2 in templateItem.propMap) {
@@ -590,21 +675,6 @@ owo.tool.change = function (environment, obj) {
       templateItem.prop[key2] = _owo.getValueFromScript(propMapItem.split('.'), environment)
     }
   }
-  var htmlList = environment.$el.querySelectorAll('[o-html]')
-  for (var ind = 0; ind < htmlList.length; ind++) {
-    var valueDom = htmlList[ind]
-    var temp = valueDom.getAttribute('o-html').replace(/ /g, '')
-    const value = (function (temp) {
-      try {
-        return eval(temp)
-      } catch (error) {
-        return undefined
-      }
-    }).apply(environment, [temp])
-    // console.log(value)
-    valueDom.innerHTML = value
-  }
-  // console.log(environment, key, value)
 }
 
 

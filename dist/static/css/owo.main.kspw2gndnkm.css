@@ -521,7 +521,7 @@ li {
   position: absolute;
   left: 588px;
   z-index: 30;
-  top: 3753px;
+  top: 3353px;
 }
 
 .page2 .so-31 {
@@ -607,7 +607,7 @@ li {
   position: absolute;
   left: 88px;
   z-index: 22;
-  top: 6660px;
+  top: 6360px;
 }
 
 .page2 .so-21 {
@@ -669,7 +669,7 @@ li {
   position: absolute;
   left: 87px;
   z-index: 14;
-  top: 9171px;
+  top: 8571px;
 }
 
 .page2 .so-16 {
@@ -720,7 +720,7 @@ li {
   position: absolute;
   left: 89px;
   z-index: 6;
-  top: 12315px;
+  top: 12015px;
 }
 
 .page2 .so-8 {
@@ -814,99 +814,80 @@ li {
   color: #bd8726;
 }
 .page3 {
-  background-color: #698844;
+  background-color: #fef4e2;
 }
 
-.page3 .so-11 {
+.page3 .so-6 {
   position: absolute;
-  left: 128px;
-  z-index: 11;
-  top: 189px;
+  left: 156px;
+  z-index: 6;
+  top: 479px;
 }
 
-.page3 .so-13 {
+.page3 .so-5 {
   position: absolute;
-  left: 587px;
-  z-index: 13;
-  top: 937px;
+  left: 101px;
+  z-index: 5;
+  top: 670px;
 }
 
-.page3 .so-12 {
+.page3 .so-4 {
   position: absolute;
-  left: 109px;
-  z-index: 12;
-  font-size: 25px;
-  line-height: 50px;
-  color: #fef4e2;
-  top: 908px;
-  width: 406px;
-  letter-spacing: 0.05em;
+  left: 592px;
+  z-index: 4;
+  top: 738px;
+}
+
+.page3 .badge {
+  width: 400px;
+  height: 400px;
+  top: -60%;
+}
+.scoreboard {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.scoreboard .scoreboard-item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 }
 .page4 {
-  background-color: #698844;
+  background-color: #fef4e2;
 }
 
-.page4 .so-3 {
+.page4 .title {
   position: absolute;
-  left: 132px;
-  z-index: 3;
-  top: 233px;
+  top: 24%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.page4 .so-7 {
+.page4 .show {
   position: absolute;
-  left: 254px;
-  z-index: 7;
-  top: 418px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.page4 .so-8 {
+.page4 .scoreboard {
   position: absolute;
-  left: 381px;
-  z-index: 8;
-  top: 526px;
-}
-
-.page4 .so-10 {
-  position: absolute;
-  left: 132px;
-  z-index: 10;
-  top: 465px;
-}
-
-.page4 .so-9 {
-  position: absolute;
-  left: 556px;
-  z-index: 9;
-  top: 797px;
-}
-
-.page4 .so-4 {
-  position: absolute;
-  left: 131px;
-  z-index: 4;
-  top: 601px;
-}
-
-.page4 .so-5 {
-  position: absolute;
-  left: 111px;
-  z-index: 5;
-  top: 826px;
-}
-
-.page4 .so-6 {
-  position: absolute;
-  left: 244px;
-  z-index: 6;
-  top: 949px;
-}
-
-.page4 .so-2 {
-  position: absolute;
-  left: 77px;
-  z-index: 2;
-  top: 1132px;
+  bottom: 28%;
+  width: 100%;
+  height: 40px;
+  font-size: 34px;
+  text-align: center;
+  color: #bd8726;
+  font-weight: bold;
 }
 .page5 {
   background-color: #fef4e2;
@@ -1002,97 +983,6 @@ li {
 }
 
 /* 动画效果 */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInRight {
-  animation-name: fadeInRight;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translate3d(-180vw, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInLeft {
-  animation-name: slideInLeft;
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translate3d(180vw, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInRight {
-  animation-name: slideInRight;
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  animation-name: zoomIn;
-}
-
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes pulse {

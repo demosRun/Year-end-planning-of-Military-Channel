@@ -1,21 +1,17 @@
 <template lang="pug">
 .page3
   .scale-box#box
-    img.so-11.group-1#plant(src="@|page3-11.png|")
-    img.so-13.group-1#time1(src="@|page3-13.png|")
-    p.so-12.group-1#mainText &emsp;&emsp;此次阅兵是中国特色社会主义进入新时代的首次国庆阅兵，也是人民军队改革重塑后的首次集中亮相。旨在宣示人民军队听党指挥的政治信念，反映全力推进改革强军的巨大成就，展示履行新时代使命任务的综合能力，展现建设世界一流军队的坚定自信。
-    
+    plug(_src="./src/module/badge.owo" name="badge")
+    img.so-6(src="@|page3-6.png|")
+    img.so-5(src="@|page3-5.png|")
+    img.so-4(src="@|page3-4.png|") 
     //- 上划提示
-    img.upward(src="@|upward2.png|" o-animation="bottomToTopHide")
+    img.upward(src="@|upward.png|" o-animation="bottomToTopHide")
 </template>
 
 <script>
   module.exports = {
     created: function (params) {
-      // console.log(this.$dom.plant)
-      owo.tool.animate('fadeInUp', this.$dom.plant)
-      owo.tool.animate('fadeInRight', this.$dom.time1, 1000)
-      owo.tool.animate('fadeIn', this.$dom.mainText, 1400)
       owo.tool.touch({
         el: this.$el,
         end: function (e) {
@@ -34,30 +30,29 @@
 
 <style lang="less">
 .page3 {
-  background-color: #698844;
+  background-color: #fef4e2;
 }
-.so-11 {
+.so-6 {
   position: absolute;
-  left: 128px;
-  z-index: 11;
-  top: 189px
+  left: 156px;
+  z-index: 6;
+  top: 479px
 }
-.so-13 {
+.so-5 {
   position: absolute;
-  left: 587px;
-  z-index: 13;
-  top: 937px
+  left: 101px;
+  z-index: 5;
+  top: 670px
 }
-.so-12 {
+.so-4 {
   position: absolute;
-  left: 109px;
-  z-index: 12;
-  font-size: 25px;
-  line-height: 50px;
-  color: rgba(254, 244, 226, 1.00);
-  top: 908px;
-  width: 406px;
-  letter-spacing: 0.05em
+  left: 592px;
+  z-index: 4;
+  top: 738px
 }
-
+.badge {
+  width: 400px;
+  height: 400px;
+  top: -60%;
+}
 </style>

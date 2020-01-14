@@ -1,32 +1,37 @@
 <template lang="pug">
 .page4
   .scale-box
-    img.so-3.group-2(width="415" height="173" src="@|page3-3.png|")
-    img.so-7.group-2(width="333" height="93" src="@|page3-7.png|")
-    img.so-8.group-2(width="194" height="55" src="@|page3-8.png|")
-    img.so-10.group-2(width="83" height="82" src="@|page3-10.png|")
-    img.so-9.group-2(width="61" height="60" src="@|page3-9.png|")
-    img.so-4.group-2(width="456" height="185" src="@|page3-4.png|")
-    img.so-5.group-2(width="412" height="123" src="@|page3-5.png|")
-    img.so-6.group-2(width="367" height="155" src="@|page3-6.png|")
-    img.so-2(src="@|page3-2.png|")
+    img.title#titleBar(src="@|page4-title.png|")
+    img.show#showBox(src="")
+    plug(_name="scoreboard" _text="文字内容" _src="https://owo.ink/public/a304a0fa8525e4bf7c4ee6e5e2e731ea.page")
     //- 上划提示
-    img.upward(src="@|upward2.png|" o-animation="bottomToTopHide")
+    img.upward(src="@|upward.png|" o-animation="bottomToTopHide")
 </template>
 
 <script>
   module.exports = {
+    data: {
+      showIndex: 0,
+      showList: [
+        {src:"@|show-1.png|", name:"领导指挥方队"},
+        {src:"@|show-2.png|", name:"火箭军方队"},
+        {src:"@|show-3.png|", name:"战略支援部队方队"},
+        {src:"@|show-4.png|", name:"联勤保障部队方队"},
+        {src:"@|show-5.png|", name:"女兵方队"},
+        {src:"@|show-6.png|", name:"院校科研方队"},
+        {src:"@|show-7.png|", name:"文职人员方队"},
+        {src:"@|show-8.png|", name:"维和部队方队"},
+        {src:"@|show-9.png|", name:"战旗方队"},
+        {src:"@|show-10.png|", name:"仪仗方队"},
+        {src:"@|show-11.png|", name:"轻型装甲方队"},
+        {src:"@|show-12.png|", name:"新型反舰巡航导弹方队"},
+        {src:"@|show-13.png|", name:"无人作战第1方队"},
+        {src:"@|show-14.png|", name:"巨浪-2导弹方队"},
+        {src:"@|show-15.png|", name:"核导弹方队"},
+        {src:"@|show-16.png|", name:"东风-17常规导弹方队"}
+      ]
+    },
     created: function (params) {
-      owo.tool.animate('slideInLeft', owo.query('.so-3')[0], 1000)
-      owo.tool.animate('slideInRight', owo.query('.so-7')[0], 1600)
-      owo.tool.animate('slideInRight', owo.query('.so-8')[0], 1600)
-      // owo.tool.animate('slideInRight', owo.query('.so-10')[0], 1200)
-      // owo.tool.animate('slideInLeft', owo.query('.so-9')[0], 1400)
-      owo.tool.animate('slideInLeft', owo.query('.so-4')[0], 2600)
-      owo.tool.animate('slideInRight', owo.query('.so-5')[0], 2600)
-      owo.tool.animate('slideInLeft', owo.query('.so-6')[0], 3200)
-      owo.tool.animate('zoomIn', owo.query('.so-10')[0], 4000)
-      owo.tool.animate('zoomIn', owo.query('.so-9')[0], 4200)
       owo.tool.touch({
         el: this.$el,
         end: function (e) {
@@ -37,6 +42,29 @@
           }
         }
       })
+    },
+    show: function (params) {
+      this.data.showIndex = 0
+      this.$dom.showBox.src = this.data.showList[this.data.showIndex].src
+      setTimeout(() => {
+        this.template.scoreboard.changeText(this.data.showList[this.data.showIndex].name)
+        this.data.showIndex++
+        this.next()
+      }, 0)
+      
+    },
+    next: function () {
+      setTimeout(() => {
+        if (this.data.showIndex == 9) {
+          this.$dom.titleBar.src = '@|page4-title-2.png|'
+        }
+        if (this.data.showList[this.data.showIndex]) {
+          this.template.scoreboard.changeText(this.data.showList[this.data.showIndex].name)
+          this.$dom.showBox.src = this.data.showList[this.data.showIndex].src
+          this.data.showIndex++
+          this.next()
+        }
+      }, 2000)
     }
   }
 </script>
@@ -44,60 +72,31 @@
 
 <style lang="less">
 .page4 {
-  background-color: #698844;
+  background-color: #fef4e2;
 }
-.so-3 {
+.title {
   position: absolute;
-  left: 132px;
-  z-index: 3;
-  top: 233px
+  top: 24%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-.so-7 {
+.show {
   position: absolute;
-  left: 254px;
-  z-index: 7;
-  top: 418px
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
-.so-8 {
+.scoreboard {
   position: absolute;
-  left: 381px;
-  z-index: 8;
-  top: 526px
-}
-.so-10 {
-  position: absolute;
-  left: 132px;
-  z-index: 10;
-  top: 465px
-}
-.so-9 {
-  position: absolute;
-  left: 556px;
-  z-index: 9;
-  top: 797px
-}
-.so-4 {
-  position: absolute;
-  left: 131px;
-  z-index: 4;
-  top: 601px
-}
-.so-5 {
-  position: absolute;
-  left: 111px;
-  z-index: 5;
-  top: 826px
-}
-.so-6 {
-  position: absolute;
-  left: 244px;
-  z-index: 6;
-  top: 949px
-}
-.so-2 {
-  position: absolute;
-  left: 77px;
-  z-index: 2;
-  top: 1132px
+  bottom: 28%;
+  width: 100%;
+  height: 40px;
+  font-size: 34px;
+  text-align: center;
+  color: #bd8726;
+  font-weight: bold;
 }
 </style>

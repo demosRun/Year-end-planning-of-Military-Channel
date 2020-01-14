@@ -11,7 +11,7 @@
     p.so-36 &emsp;&emsp;我国在黄海海域用长征十一号海射型固体运载火箭将技术试验卫星捕风一号A、B星及5颗商业卫星顺利送入预定轨道，试验取得圆满成功。<br>&emsp;&emsp;这是我国首次在海上实施运载火箭发射技术试验，探索了我国海上发射管理模式，验证了海上发射能力。<br>
     img.so-33(src="@|page2-33.png|")
     p.so-32(font="FZDBSJT.TTF") 中俄空军首次联合空<br>中战略巡航<br>
-    img.so-30.lax(src="@|page2-30.png|" data-lax-translate-x="(2.6*vw) 200, (3.6*vw) 0")
+    img.so-30.lax(src="@|page2-30.png|" data-lax-translate-y="(3.6*vw) 0, (4.6*vw) 300")
     p.so-31 &emsp;&emsp;中国与俄罗斯两国空军在东北亚地区组织实施首次联合空中战略巡航，中方派出2架轰-6K飞机，与俄方2架图-95飞机混合编队，在日本海、东海有关空域按既定航线组织联合巡航。<br>&emsp;&emsp;此次联合巡航旨在深化和发展中俄新时代全面战略协作伙伴关系，进一步提升中俄两军战略协作水平和联合行动能力，共同维护全球战略稳定。此次行动是中俄两军年度合作计划内项目，不针对第三方。
     img.so-29(src="@|page2-29.png|")
     p.so-27(font="FZDBSJT.TTF") 空军歼-20战机首次7<br>机同框
@@ -20,14 +20,14 @@
     img.so-25(src="@|page2-25.png|")
     p.so-23(font="FZDBSJT.TTF") 中国首次确认6位归国<br>志愿军烈士遗骸身份<br>
     p.so-24 &emsp;&emsp;沈阳抗美援朝烈士陵园，退役军人事务部举行认亲仪式，6名志愿军烈士确认了身份，与亲人“团聚”。<br>&emsp;&emsp;是我国首次通过DNA技术手段确认无名志愿军烈士的身份。充分表明了祖国和人民一直没有忘记那些无名英雄，也永远不会忘记那些埋葬在异国他乡的英雄儿女。
-    img.so-22.lax(src="@|page2-22.png|" data-lax-translate-x="(7*vw) -200, (8*vw) 0")
+    img.so-22.lax(src="@|page2-22.png|" data-lax-translate-y="(7.2*vw) 0, (8*vw) 300")
     img.so-21(src="@|page2-21.png|")
     p.so-20(font="FZDBSJT.TTF") 世界军运会首次进入<br>中国时间
     p.so-19 &emsp;&emsp;第七届世界军人运动在江城武汉举行，来自109个国家的9300余名军体健儿同场竞技、增进友谊。<br>&emsp;&emsp;世界军运会首次进入中国时间，这是我国第一次承办的综合性国际军事体育赛事，也是继北京奥运会后我国举办的规模最大的国际体育盛会。 <br>
     img.so-18.lax(src="@|page2-18.png|" data-lax-translate-x="(8*vw) 200, (9*vw) 0")
     img.so-17(src="@|page2-17.png|")
     p.so-15(font="FZDBSJT.TTF") 中俄南非首次在非洲<br>南部举行海上联演<br>
-    img.so-14.lax(src="@|page2-14.png|" data-lax-translate-x="(10*vw) -200, (11*vw) 0")
+    img.so-14.lax(src="@|page2-14.png|" data-lax-translate-y="(10.6*vw) 0, (11*vw) 300")
     p.so-16 &emsp;&emsp;11月24日至29日，中国、俄罗斯、南非三国海上联合演习在南非开普敦近岸海空域举行。此次联演是上述三国海军首次在非洲南部海域举行海上联合演习。<br>&emsp;&emsp;此次联演有助于深化三国海军间的交流合作，提高共同应对海上安全威胁能力，展示共同维护地区海上和平稳定的决心意志、积极推动构建“海洋命运共同体”的良好意愿和强大能力。<br>
     img.so-13(src="@|page2-13.png|")
     p.so-12(font="FZDBSJT.TTF") 军事院校体系重塑后<br>首次全军院校长集训 <br>
@@ -35,7 +35,7 @@
     img.so-10.lax(src="@|page2-10.png|" data-lax-translate-x="(12*vw) 200, (13*vw) 0")
     img.so-9(src="@|page2-9.png|")
     p.so-7(font="FZDBSJT.TTF") 我国首艘国产航母山<br>东舰入列
-    img.so-6.lax(src="@|page2-6.png|" data-lax-translate-x="(14*vw) -200, (15*vw) 0")
+    img.so-6.lax(src="@|page2-6.png|" data-lax-translate-y="(14.4*vw) 0, (15*vw) 300")
     p.so-8 &emsp;&emsp;我国第一艘国产航空母舰山东舰在海南三亚某军港交付海军。<br>&emsp;&emsp;山东舰立足国内自主设计建造，重点解决了航母总体设计、船体建造、主动力装备国产化研制等问题，提高了综合作战效能和综合保障水平。
     img.so-5(src="@|page2-5.png|")
     p.so-4(font="FZDBSJT.TTF") 中俄伊朗首次举行联合<br>军演
@@ -165,7 +165,7 @@
   position: absolute;
   left: 588px;
   z-index: 30;
-  top: 3753px
+  top: 3353px
 }
 .so-31 {
   position: absolute;
@@ -242,7 +242,7 @@
   position: absolute;
   left: 88px;
   z-index: 22;
-  top: 6660px
+  top: 6360px
 }
 .so-21 {
   position: absolute;
@@ -297,7 +297,7 @@
   position: absolute;
   left: 87px;
   z-index: 14;
-  top: 9171px
+  top: 8571px
 }
 .so-16 {
   position: absolute;
@@ -342,7 +342,7 @@
   position: absolute;
   left: 89px;
   z-index: 6;
-  top: 12315px
+  top: 12015px
 }
 .so-8 {
   position: absolute;
