@@ -90,6 +90,12 @@
 		"name": "page4",
 		"src": "./src/page/page4.owo"
 	}, {
+		"name": "page4-1",
+		"src": "./src/page/page4-1.owo"
+	}, {
+		"name": "page4-2",
+		"src": "./src/page/page4-2.owo"
+	},  {
 		"name": "page5",
 		"src": "./src/page/page5.owo"
 	}],

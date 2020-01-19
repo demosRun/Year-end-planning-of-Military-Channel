@@ -1,0 +1,83 @@
+<template lang="pug">
+.page4-2
+  .scale-box
+    img.so-6(src="@|message-6.png|")
+    img.so-3(src="@|message-3.png|")
+    .so-2(style="width: 690px; height: 1006px; background-color: white")
+    //- 上划提示
+    img.upward(src="@|upward.png|" o-animation="bottomToTopHide")
+    //- 展示留言的框
+    .so-4#demob(style="width: 614px; height: 828px;")
+      img#demo1b(src="@|show-1.jpg|")
+      img#demo2b(src="@|show-2.jpg|")
+</template>
+
+<script>
+  module.exports = {
+    data: {
+    },
+    created: function (params) {
+      owo.tool.touch({
+        el: this.$el,
+        end: function (e) {
+          if (e.swipe[1] < -100) {
+            owo.go('page5', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true)
+          } else if (e.swipe[1] > 100) {
+            owo.go('page4-1', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
+          }
+        }
+      })
+      // 自动滚动
+      var speed=30;
+      var demob=document.getElementById("demob");
+      var demo2b=document.getElementById("demo2b");
+      var demo1b=document.getElementById("demo1b");
+      function Marquee(){
+        if (demo2b.offsetTop-demob.scrollTop <= 0) {
+          demob.scrollTop=0;
+        }
+        else {
+          demob.scrollTop++;
+        }
+      }
+      var MyMar=setInterval(Marquee, speed);
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page4-2 {
+  background-color: #fef4e2;
+}
+.so-6 {
+  position: absolute;
+  left: 64px;
+  z-index: 6;
+  top: 223px;
+}
+.so-3 {
+  position: absolute;
+  left: 63px;
+  z-index: 3;
+  top: 359px;
+}
+.so-2 {
+  position: absolute;
+  left: 31px;
+  z-index: 2;
+  top: 314px;
+  pointer-events: none;
+}
+.so-4 {
+  position: absolute;
+  left: 65px;
+  z-index: 4;
+  top: 443px;
+  overflow: auto;
+  pointer-events: none;
+  img {
+    margin-bottom: 40px;
+  }
+}
+</style>

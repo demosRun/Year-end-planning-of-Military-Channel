@@ -3,9 +3,11 @@
   .scale-box
     plug(_src="./src/module/badge.owo" name="badge")
     img.so-4(src="@|page4-4.png|" o-tap="like")
-    img.so-3(src="@|page4-3.png|" o-tap="owo.tool.change(this, {showShare: true})")
+    img.so-3(src="@|page4-3.png|" o-tap="document.getElementsByClassName('share-box')[0].style.display = 'block'")
     img.so-2(src="@|page4-2.png|")
-  .share-box(o-show="this.data.showShare" o-tap="owo.tool.change(this, {showShare: false})")
+    //- 底部信息
+    img.bottom-info(src="@|bottom-info.png|")
+  .share-box(o-tap="document.getElementsByClassName('share-box')[0].style.display = 'none'")
     img(src="@|share.png|")
 </template>
 
@@ -19,7 +21,7 @@
         el: this.$el,
         end: function (e) {
           if (e.swipe[1] > 100) {
-            owo.go('page4', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
+            owo.go('page4-2', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
           }
         }
       })
@@ -51,7 +53,7 @@
   position: absolute;
   left: 274px;
   z-index: 2;
-  top: 1232px
+  top: 1114px
 }
 .badge {
   top: -37%;
@@ -62,6 +64,7 @@
   position: fixed;
   left: 0;
   top: 0;
+  display: none;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
@@ -71,5 +74,12 @@
     right: 0;
     top: 0;
   }
+}
+.bottom-info {
+  position: absolute;
+  bottom: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 </style>

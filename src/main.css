@@ -78,4 +78,5 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   margin: auto;
   bottom: 7%;
   height: 26vh;
+  z-index: 99;
 }

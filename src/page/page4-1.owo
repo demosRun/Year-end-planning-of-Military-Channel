@@ -1,16 +1,13 @@
 <template lang="pug">
-.page4
+.page4-1
   .scale-box
-    img.title#titleBar(src="@|page4-title.png|")
+    img.title#titleBar(src="@|page4-title-2.png|")
     img.show#showBox(src="")
     plug(_name="scoreboard" _text="文字内容" _src="https://owo.ink/public/a304a0fa8525e4bf7c4ee6e5e2e731ea.page")
     //- 上划提示
     img.upward(src="@|upward.png|" o-animation="bottomToTopHide")
     //- 进度小点
-    ul.steep-box
-      li
-      li
-      li
+    ul.steep-box-2
       li
       li
       li
@@ -24,16 +21,12 @@
     data: {
       showIndex: 0,
       showList: [
-        {src:"@|show-1.png|", name:"领导指挥方队"},
-        {src:"@|show-2.png|", name:"火箭军方队"},
-        {src:"@|show-3.png|", name:"战略支援部队方队"},
-        {src:"@|show-4.png|", name:"联勤保障部队方队"},
-        {src:"@|show-5.png|", name:"女兵方队"},
-        {src:"@|show-6.png|", name:"院校科研方队"},
-        {src:"@|show-7.png|", name:"文职人员方队"},
-        {src:"@|show-8.png|", name:"维和部队方队"},
-        {src:"@|show-9.png|", name:"战旗方队"},
-        {src:"@|show-10.png|", name:"仪仗方队"}
+        {src:"@|show-11.png|", name:"轻型装甲方队"},
+        {src:"@|show-12.png|", name:"新型反舰巡航导弹方队"},
+        {src:"@|show-13.png|", name:"无人作战第1方队"},
+        {src:"@|show-14.png|", name:"巨浪-2导弹方队"},
+        {src:"@|show-15.png|", name:"核导弹方队"},
+        {src:"@|show-16.png|", name:"东风-17常规导弹方队"}
       ]
     },
     created: function (params) {
@@ -41,9 +34,9 @@
         el: this.$el,
         end: function (e) {
           if (e.swipe[1] < -100) {
-            owo.go('page4-1', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true)
+            owo.go('page4-2', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true)
           } else if (e.swipe[1] > 100) {
-            owo.go('page3', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
+            owo.go('page4', 'moveToBottom', 'scaleUp', 'moveToTop', 'scaleUp', true)
           }
         }
       })
@@ -56,10 +49,10 @@
         this.data.showIndex++
         this.next()
       }, 0)
-      owo.query('.steep-box li').forEach(element => {
+      owo.query('.steep-box-2 li').forEach(element => {
         element.classList.remove('active')
       })
-      owo.query('.steep-box li')[0].classList.add('active')
+      owo.query('.steep-box-2 li')[0].classList.add('active')
     },
     next: function () {
       setTimeout(() => {
@@ -67,14 +60,16 @@
           this.template.scoreboard.changeText(this.data.showList[this.data.showIndex].name)
           this.$dom.showBox.src = this.data.showList[this.data.showIndex].src
           this.data.showIndex++
-          if (owo.activePage == 'page4') {
+          if (owo.activePage == 'page4-1') {
             this.next()
-            const listDoit = owo.query('.steep-box li')
+              const listDoit = owo.query('.steep-box-2 li')
             for (let index = 0; index < this.data.showIndex; index++) {
               const element = listDoit[index];
               element.classList.add('active')
             }
           }
+          
+          
         }
       }, 2000)
     }
@@ -83,7 +78,7 @@
 
 
 <style lang="less">
-.page4 {
+.page4-1 {
   background-color: #fef4e2;
 }
 .title {
@@ -111,7 +106,7 @@
   color: #bd8726;
   font-weight: bold;
 }
-.steep-box {
+.steep-box-2 {
   position: absolute;
   top: 980px;
   height: 20px;

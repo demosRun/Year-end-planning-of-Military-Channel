@@ -225,18 +225,18 @@ li {
   height: 500px;
   top: -15%;
 }
-              [font="FZDBSJT.TTF"] {
-                font-family: 'FZDBSJT';
-              }
-              @font-face {
-                font-family: 'FZDBSJT';
-                src: url('../font/FZDBSJT.eot');
-                src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
-                  url('../font/FZDBSJT.woff') format('woff'),
-                  url('../font/FZDBSJT.ttf')  format('truetype'),
-                  url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
-              }
-            
+            [font="FZDBSJT"] {
+              font-family: 'FZDBSJT';
+            }
+            @font-face {
+              font-family: 'FZDBSJT';
+              src: url('../font/FZDBSJT.eot');
+              src: url('../font/FZDBSJT.eot?#iefix') format('embedded-opentype'),
+                url('../font/FZDBSJT.woff') format('woff'),
+                url('../font/FZDBSJT.ttf')  format('truetype'),
+                url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
+            }
+          
 @-webkit-keyframes circleAnimationIn {
   0% {
     transform: scale(0.3);
@@ -268,7 +268,7 @@ li {
     opacity: 0;
   }
 }
-            
+          
 @keyframes circleAnimationIn {
   0% {
     transform: scale(0.3);
@@ -889,6 +889,125 @@ li {
   color: #bd8726;
   font-weight: bold;
 }
+
+.page4 .steep-box {
+  position: absolute;
+  top: 980px;
+  height: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.page4 .steep-box li {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 0 6px;
+}
+
+.page4 .steep-box .active {
+  background-color: #bd872e;
+}
+.page4-1 {
+  background-color: #fef4e2;
+}
+
+.page4-1 .title {
+  position: absolute;
+  top: 24%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.page4-1 .show {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page4-1 .scoreboard {
+  position: absolute;
+  bottom: 28%;
+  width: 100%;
+  height: 40px;
+  font-size: 34px;
+  text-align: center;
+  color: #bd8726;
+  font-weight: bold;
+}
+
+.page4-1 .steep-box-2 {
+  position: absolute;
+  top: 980px;
+  height: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.page4-1 .steep-box-2 li {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 0 6px;
+}
+
+.page4-1 .steep-box-2 .active {
+  background-color: #bd872e;
+}
+.page4-2 {
+  background-color: #fef4e2;
+}
+
+.page4-2 .so-6 {
+  position: absolute;
+  left: 64px;
+  z-index: 6;
+  top: 223px;
+}
+
+.page4-2 .so-3 {
+  position: absolute;
+  left: 63px;
+  z-index: 3;
+  top: 359px;
+}
+
+.page4-2 .so-2 {
+  position: absolute;
+  left: 31px;
+  z-index: 2;
+  top: 314px;
+  pointer-events: none;
+}
+
+.page4-2 .so-4 {
+  position: absolute;
+  left: 65px;
+  z-index: 4;
+  top: 443px;
+  overflow: auto;
+  pointer-events: none;
+}
+
+.page4-2 .so-4 img {
+  margin-bottom: 40px;
+}
 .page5 {
   background-color: #fef4e2;
 }
@@ -911,7 +1030,7 @@ li {
   position: absolute;
   left: 274px;
   z-index: 2;
-  top: 1232px;
+  top: 1114px;
 }
 
 .page5 .badge {
@@ -924,6 +1043,7 @@ li {
   position: fixed;
   left: 0;
   top: 0;
+  display: none;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
@@ -934,6 +1054,14 @@ li {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.page5 .bottom-info {
+  position: absolute;
+  bottom: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 /* 页面切换动画 */
 .o-page-moveToTop {
