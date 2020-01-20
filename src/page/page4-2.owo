@@ -28,7 +28,7 @@
         }
       })
       // 自动滚动
-      var speed=30;
+      var speed=10;
       var demob=document.getElementById("demob");
       var demo2b=document.getElementById("demo2b");
       var demo1b=document.getElementById("demo1b");

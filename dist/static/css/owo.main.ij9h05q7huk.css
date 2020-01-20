@@ -177,21 +177,21 @@ li {
   position: absolute;
   left: 255px;
   z-index: 6;
-  top: 189px;
+  top: 229px;
 }
 
 .page1 .so-5 {
   position: absolute;
   left: 127px;
   z-index: 5;
-  top: 257px;
+  top: 297px;
 }
 
 .page1 .so-4 {
   position: absolute;
   left: 264px;
   z-index: 4;
-  top: 328px;
+  top: 368px;
 }
 
 .page1 .so-7 {
@@ -812,6 +812,10 @@ li {
 
 .page2 .next-box p {
   color: #bd8726;
+}
+
+.page2 .scale-width-box {
+  margin-top: -40px;
 }
 .page3 {
   background-color: #fef4e2;

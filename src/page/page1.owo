@@ -37,19 +37,19 @@
   position: absolute;
   left: 255px;
   z-index: 6;
-  top: 189px
+  top: 229px
 }
 .so-5 {
   position: absolute;
   left: 127px;
   z-index: 5;
-  top: 257px
+  top: 297px
 }
 .so-4 {
   position: absolute;
   left: 264px;
   z-index: 4;
-  top: 328px
+  top: 368px
 }
 .so-7 {
   position: absolute;

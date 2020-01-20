@@ -423,4 +423,7 @@
     color: #bd8726; 
   }
 }
+.scale-width-box {
+  margin-top: -40px;
+}
 </style>
