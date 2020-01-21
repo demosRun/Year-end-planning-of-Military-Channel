@@ -83,7 +83,7 @@
   position: absolute;
   left: 96px;
   z-index: 41;
-  top: 160px
+  top: 80px
 }
 .so-40 {
   position: absolute;
@@ -114,7 +114,7 @@
 }
 .so-37 {
   position: absolute;
-  left: -7px;
+  left: 96px;
   z-index: 37;
   top: 1501px
 }
@@ -149,7 +149,7 @@
   position: absolute;
   left: 96px;
   z-index: 33;
-  top: 3009px
+  top: 2910px;
 }
 .so-32 {
   position: absolute;
@@ -180,7 +180,7 @@
 }
 .so-29 {
   position: absolute;
-  left: -7px;
+  left: 96px;
   z-index: 29;
   top: 4477px
 }
@@ -213,7 +213,7 @@
 }
 .so-25 {
   position: absolute;
-  left: 234px;
+  left: 96px;
   z-index: 25;
   top: 5920px
 }
@@ -248,7 +248,7 @@
   position: absolute;
   left: 96px;
   z-index: 21;
-  top: 7310px
+  top: 7180px;
 }
 .so-20 {
   position: absolute;
@@ -267,7 +267,7 @@
   font-size: 25px;
   line-height: 50px;
   color: rgba(189, 135, 38, 1.00);
-  top: 7879px;
+  top: 7750px;
   width: 389px;
   letter-spacing: 0.02em
 }
@@ -279,9 +279,9 @@
 }
 .so-17 {
   position: absolute;
-  left: 234px;
+  left: 96px;
   z-index: 17;
-  top: 8864px
+  top: 8740px;
 }
 .so-15 {
   position: absolute;
@@ -297,7 +297,7 @@
   position: absolute;
   left: 87px;
   z-index: 14;
-  top: 8571px
+  top: 9000px;
 }
 .so-16 {
   position: absolute;
@@ -314,7 +314,7 @@
   position: absolute;
   left: 98px;
   z-index: 13;
-  top: 10252px
+  top: 10130px;
 }
 .so-10 {
   position: absolute;
@@ -324,7 +324,7 @@
 }
 .so-9 {
   position: absolute;
-  left: -7px;
+  left: 96px;
   z-index: 9;
   top: 11723px
 }
@@ -359,7 +359,7 @@
   position: absolute;
   left: 96px;
   z-index: 5;
-  top: 13113px
+  top: 13032px;
 }
 .so-2 {
   position: absolute;
@@ -422,8 +422,5 @@
   p {
     color: #bd8726; 
   }
-}
-.scale-width-box {
-  margin-top: -40px;
 }
 </style>

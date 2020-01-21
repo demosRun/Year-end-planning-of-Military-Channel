@@ -177,21 +177,21 @@ li {
   position: absolute;
   left: 255px;
   z-index: 6;
-  top: 229px;
+  top: 269px;
 }
 
 .page1 .so-5 {
   position: absolute;
   left: 127px;
   z-index: 5;
-  top: 297px;
+  top: 337px;
 }
 
 .page1 .so-4 {
   position: absolute;
   left: 264px;
   z-index: 4;
-  top: 368px;
+  top: 408px;
 }
 
 .page1 .so-7 {
@@ -429,7 +429,7 @@ li {
   position: absolute;
   left: 96px;
   z-index: 41;
-  top: 160px;
+  top: 80px;
 }
 
 .page2 .so-40 {
@@ -464,7 +464,7 @@ li {
 
 .page2 .so-37 {
   position: absolute;
-  left: -7px;
+  left: 96px;
   z-index: 37;
   top: 1501px;
 }
@@ -503,7 +503,7 @@ li {
   position: absolute;
   left: 96px;
   z-index: 33;
-  top: 3009px;
+  top: 2910px;
 }
 
 .page2 .so-32 {
@@ -538,7 +538,7 @@ li {
 
 .page2 .so-29 {
   position: absolute;
-  left: -7px;
+  left: 96px;
   z-index: 29;
   top: 4477px;
 }
@@ -575,7 +575,7 @@ li {
 
 .page2 .so-25 {
   position: absolute;
-  left: 234px;
+  left: 96px;
   z-index: 25;
   top: 5920px;
 }
@@ -614,7 +614,7 @@ li {
   position: absolute;
   left: 96px;
   z-index: 21;
-  top: 7310px;
+  top: 7180px;
 }
 
 .page2 .so-20 {
@@ -635,7 +635,7 @@ li {
   font-size: 25px;
   line-height: 50px;
   color: #bd8726;
-  top: 7879px;
+  top: 7750px;
   width: 389px;
   letter-spacing: 0.02em;
 }
@@ -649,9 +649,9 @@ li {
 
 .page2 .so-17 {
   position: absolute;
-  left: 234px;
+  left: 96px;
   z-index: 17;
-  top: 8864px;
+  top: 8740px;
 }
 
 .page2 .so-15 {
@@ -669,7 +669,7 @@ li {
   position: absolute;
   left: 87px;
   z-index: 14;
-  top: 8571px;
+  top: 9000px;
 }
 
 .page2 .so-16 {
@@ -688,7 +688,7 @@ li {
   position: absolute;
   left: 98px;
   z-index: 13;
-  top: 10252px;
+  top: 10130px;
 }
 
 .page2 .so-10 {
@@ -700,7 +700,7 @@ li {
 
 .page2 .so-9 {
   position: absolute;
-  left: -7px;
+  left: 96px;
   z-index: 9;
   top: 11723px;
 }
@@ -739,7 +739,7 @@ li {
   position: absolute;
   left: 96px;
   z-index: 5;
-  top: 13113px;
+  top: 13032px;
 }
 
 .page2 .so-2 {
@@ -812,10 +812,6 @@ li {
 
 .page2 .next-box p {
   color: #bd8726;
-}
-
-.page2 .scale-width-box {
-  margin-top: -40px;
 }
 .page3 {
   background-color: #fef4e2;
