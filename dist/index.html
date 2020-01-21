@@ -22,7 +22,7 @@
   <meta name="x5-page-mode" content="app" />
 
   <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.cvbowmhg89c.css">
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.ova56mc2b4.css">
 
   <!-- 附属css文件 -->
   <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
@@ -100,14 +100,7 @@
       <p class="so-4" font="FZDBSJT.TTF">中俄伊朗首次举行联合<br>军演</p>
       <img class="so-2 lax" src="./static/resource/page2-2.png" data-lax-translate-x="(16*vw) 200, (17*vw) 0">
       <p class="so-3">  根据中国、俄罗斯、伊朗三国军队达成的共识，中俄伊海上联合演习于12月27日至30日在阿曼湾地区举行。中国海军派“西宁”号导弹驱逐舰参加。<br>  此次演习旨在深化三国海军之间的交流合作，展示三方共同维护世界和平与海上安全、积极构建“海洋命运共同体”的良好意愿和能力。</p>
-      <div class="next-box" o-tap="next">
-        <div class="ripple-box" template="ripple">
-          <div class="dot"></div>
-          <div class="inner-circle"></div>
-          <div class="outer-circle"></div>
-        </div>
-        <p>点击进入</p>
-      </div>
+      <img class="next-box owo-animation-shrink" o-tap="next" src="./static/resource/button.png" o-animation="shrink">
     </div>
   </div>
   <!-- 页面[page3]-->
@@ -201,7 +194,7 @@
   <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/lax.js" type="text/javascript" charset="UTF-8"></script><!-- 框架script代码 -->
   <!-- 框架script文件 -->
-  <script src="./static/js/owo.main.cvbowmhg89c.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/owo.main.ova56mc2b4.js" type="text/javascript" charset="UTF-8"></script>
   <script>
     /*
   存储每个页面的函数
@@ -310,14 +303,6 @@
         "next": function next(params) {
           this.data.isRun = false;
           owo.go('page3', 'moveToTop', 'scaleUp', 'moveToBottom', 'scaleUp', true);
-        },
-        "template": {
-          "ripple": {
-            "prop": {
-              "name": "ripple"
-            },
-            "propMap": {}
-          }
         }
       },
       "page3": {

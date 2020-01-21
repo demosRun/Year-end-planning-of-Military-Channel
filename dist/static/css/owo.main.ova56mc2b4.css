@@ -236,189 +236,19 @@ li {
                 url('../font/FZDBSJT.ttf')  format('truetype'),
                 url('../font/FZDBSJT.svg#MicrosoftYaHei') format('svg');
             }
-          
-@-webkit-keyframes circleAnimationIn {
-  0% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0.1;
-  }
-
-  50% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    opacity: 0.3;
-  }
-
-  75% {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    opacity: 0;
-  }
+          .owo-animation-shrink {
+  -webkit-animation: shrink 1s linear alternate infinite;
+  animation: shrink 1s linear alternate infinite;
 }
-          
-@keyframes circleAnimationIn {
-  0% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0.1;
-  }
-
-  50% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    opacity: 0.3;
-  }
-
-  75% {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    opacity: 0;
-  }
+@-webkit-keyframes shrink{
+  0%{-webkit-transform:scale(0.9);}
+  100%{-webkit-transform:scale(1);}
+}
+@keyframes shrink{
+  0%{-webkit-transform:scale(0.9);transform:scale(0.9);}
+  100%{-webkit-transform:scale(1);transform:scale(1);}
 }
 
-@-webkit-keyframes circleAnimationOut {
-  0% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0.1;
-  }
-
-  50% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0.3;
-  }
-
-  75% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    opacity: 0;
-  }
-}
-
-@keyframes circleAnimationOut {
-  0% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0.1;
-  }
-
-  50% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
-    opacity: 0.3;
-  }
-
-  75% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    opacity: 0;
-  }
-}
-
-.ripple-box {
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-}
-
-/* 保持大小不变的小圆点 */
-
-.ripple-box .dot {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: -9px;
-  margin-top: -9px;
-  border-radius: 50%;
-  background-color: #dbe6b2;
-  /* 实心圆 ，如果没有这个就是一个小圆圈 */
-  z-index: 2;
-}
-
-/* 产生动画（向外扩散变大）的圆圈 第一个圆 */
-
-.ripple-box .inner-circle {
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px solid #dbe6b2;
-  -webkit-animation: circleAnimationIn 2s ease-out;
-  animation: circleAnimationIn 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  box-shadow: 2px 2px 30px #dbe6b2;
-}
-
-/* 产生动画（向外扩散变大）的圆圈 第二个圆 */
-
-.ripple-box .outer-circle {
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px solid #dbe6b2;
-  -webkit-animation: circleAnimationOut 2s ease-out;
-  animation: circleAnimationOut 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  box-shadow: 2px 2px 30px #dbe6b2;
-}
 .page2 {
   overflow: auto;
   overflow-x: hidden;
@@ -799,19 +629,6 @@ li {
   color: #d3263b;
   bottom: auto;
   top: 14208px;
-}
-
-.page2 .next-box .dot {
-  background-color: #bd8726;
-}
-
-.page2 .next-box .inner-circle,
-.page2 .next-box .outer-circle {
-  border: 2px solid #bd8726;
-}
-
-.page2 .next-box p {
-  color: #bd8726;
 }
 .page3 {
   background-color: #fef4e2;

@@ -42,9 +42,7 @@
     img.so-2.lax(src="@|page2-2.png|" data-lax-translate-x="(16*vw) 200, (17*vw) 0")
     p.so-3 &emsp;&emsp;根据中国、俄罗斯、伊朗三国军队达成的共识，中俄伊海上联合演习于12月27日至30日在阿曼湾地区举行。中国海军派“西宁”号导弹驱逐舰参加。<br>&emsp;&emsp;此次演习旨在深化三国海军之间的交流合作，展示三方共同维护世界和平与海上安全、积极构建“海洋命运共同体”的良好意愿和能力。
     //- 进入下一步按钮
-    .next-box(o-tap="next")
-      plug(_src="./src/module/ripple.owo" name="ripple")
-      p 点击进入
+    img.next-box(o-tap="next" src="@|button.png|" o-animation="shrink")
 </template>
 
 <script>
@@ -413,14 +411,5 @@
   color: #d3263b;
   bottom: auto;
   top: 14208px;
-  .dot {
-    background-color: #bd8726;
-  }
-  .inner-circle, .outer-circle {
-    border: 2px solid #bd8726;
-  }
-  p {
-    color: #bd8726; 
-  }
 }
 </style>
