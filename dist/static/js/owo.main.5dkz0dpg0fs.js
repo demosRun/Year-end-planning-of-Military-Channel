@@ -1,4 +1,4 @@
-// Tue Jan 21 2020 18:31:01 GMT+0800 (GMT+08:00)
+// Wed Jan 22 2020 13:07:42 GMT+0800 (GMT+08:00)
 var owo = {tool: {},state: {},};
 /* 方法合集 */
 var _owo = {}
@@ -322,6 +322,11 @@ _owo.showPage = function() {
   owo.entry = document.querySelector('[template]').getAttribute('template')
   // 取出URL地址判断当前所在页面
   var pageArg = _owo.getarg(window.location.hash)
+  
+  if (pageArg !== null) {
+    window.location.href = ''
+    return
+  }
   
   
 

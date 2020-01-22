@@ -208,6 +208,20 @@ li {
   top: 900px;
 }
 
+.pc .page1 .so-3 {
+  height: 3%;
+}
+
+.pc .page1 .so-2 {
+  height: 22%;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 66%;
+  bottom: auto;
+}
+
 .page1 .so-2 {
   position: absolute;
   left: 150px;
@@ -499,7 +513,7 @@ li {
   position: absolute;
   left: 87px;
   z-index: 14;
-  top: 9000px;
+  top: 9154px;
 }
 
 .page2 .so-16 {
@@ -550,7 +564,7 @@ li {
   position: absolute;
   left: 89px;
   z-index: 6;
-  top: 12015px;
+  top: 12140px;
 }
 
 .page2 .so-8 {
@@ -694,6 +708,12 @@ li {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.pc .page4 .show, .pc .page4-1 .show {
+  height: 30%;
+  top: 31%;
+  bottom: auto;
 }
 
 .page4 .scoreboard {
@@ -936,7 +956,7 @@ li {
   }
 
   50% {
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
 
   to {

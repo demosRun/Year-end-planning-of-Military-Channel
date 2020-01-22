@@ -42,6 +42,12 @@ function getScale () {
   }
 }
 
+document.addEventListener("WeixinJSBridgeReady", function () {
+  var music = new Audio("@|bg.mp3|")
+  music.loop = true
+  music.play()
+}, false)
+
 getScale()
 
 let timer = null

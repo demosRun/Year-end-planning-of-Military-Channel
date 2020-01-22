@@ -20,9 +20,19 @@
   <meta name="x5-fullscreen" content="true" />
   <meta name="browsermode" content="application" />
   <meta name="x5-page-mode" content="app" />
+  <style>
+    img {
+      pointer-events: none;
+      user-select: none;
+    }
+    .next-box, .page5 .so-4, .page5 .so-3 {
+      pointer-events: auto;
+      user-select: auto;
+    }
+  </style>
 
   <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.ova56mc2b4.css">
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.5dkz0dpg0fs.css">
 
   <!-- 附属css文件 -->
   <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
@@ -86,7 +96,7 @@
       <img class="so-18 lax" src="./static/resource/page2-18.png" data-lax-translate-x="(8*vw) 200, (9*vw) 0">
       <img class="so-17" src="./static/resource/page2-17.png">
       <p class="so-15" font="FZDBSJT.TTF">中俄南非首次在非洲<br>南部举行海上联演<br></p>
-      <img class="so-14 lax" src="./static/resource/page2-14.png" data-lax-translate-y="(10.6*vw) 0, (11*vw) 300">
+      <img class="so-14 lax" src="./static/resource/page2-14.png" data-lax-translate-y="(10.6*vw) 0, (11*vw) 200">
       <p class="so-16">  11月24日至29日，中国、俄罗斯、南非三国海上联合演习在南非开普敦近岸海空域举行。此次联演是上述三国海军首次在非洲南部海域举行海上联合演习。<br>  此次联演有助于深化三国海军间的交流合作，提高共同应对海上安全威胁能力，展示共同维护地区海上和平稳定的决心意志、积极推动构建“海洋命运共同体”的良好意愿和强大能力。<br></p>
       <img class="so-13" src="./static/resource/page2-13.png">
       <p class="so-12" font="FZDBSJT.TTF">军事院校体系重塑后<br>首次全军院校长集训 <br></p>
@@ -94,7 +104,7 @@
       <img class="so-10 lax" src="./static/resource/page2-10.png" data-lax-translate-x="(12*vw) 200, (13*vw) 0">
       <img class="so-9" src="./static/resource/page2-9.png">
       <p class="so-7" font="FZDBSJT.TTF">我国首艘国产航母山<br>东舰入列</p>
-      <img class="so-6 lax" src="./static/resource/page2-6.png" data-lax-translate-y="(14.4*vw) 0, (15*vw) 300">
+      <img class="so-6 lax" src="./static/resource/page2-6.png" data-lax-translate-y="(14.4*vw) 0, (15*vw) 100">
       <p class="so-8">  我国第一艘国产航空母舰山东舰在海南三亚某军港交付海军。<br>  山东舰立足国内自主设计建造，重点解决了航母总体设计、船体建造、主动力装备国产化研制等问题，提高了综合作战效能和综合保障水平。</p>
       <img class="so-5" src="./static/resource/page2-5.png">
       <p class="so-4" font="FZDBSJT.TTF">中俄伊朗首次举行联合<br>军演</p>
@@ -194,7 +204,7 @@
   <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/lax.js" type="text/javascript" charset="UTF-8"></script><!-- 框架script代码 -->
   <!-- 框架script文件 -->
-  <script src="./static/js/owo.main.ova56mc2b4.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/owo.main.5dkz0dpg0fs.js" type="text/javascript" charset="UTF-8"></script>
   <script>
     /*
   存储每个页面的函数
@@ -205,9 +215,10 @@
     owo.script = {
       "loading": {
         "data": {
-          "imgList": ["./static/resource/page1-3.png", "./static/resource/page1-4.png", "./static/resource/page1-5.png", "./static/resource/page1-6.png", "./static/resource/page1-7.png", "./static/resource/page2-2.png", "./static/resource/page2-5.png", "./static/resource/page2-9.png", "./static/resource/page2-10.png", "./static/resource/page2-13.png", "./static/resource/page2-14.png", "./static/resource/page2-17.png", "./static/resource/page2-18.png", "./static/resource/page2-21.png", "./static/resource/page2-25.png", "./static/resource/page2-26.png", "./static/resource/page2-29.png", "./static/resource/page2-30.png", "./static/resource/page2-33.png", "./static/resource/page2-34.png", "./static/resource/page2-37.png", "./static/resource/page2-38.png", "./static/resource/page2-41.png", "./static/resource/page3-4.png", "./static/resource/page3-5.png", "./static/resource/page3-6.png", "./static/resource/page3-7.png", "./static/resource/page3-8.png", "./static/resource/page3-9.png", "./static/resource/page3-10.png", "./static/resource/page3-11.png", "./static/resource/page3-12.png", "./static/resource/page3-13.png"]
+          "imgList": ["./static/resource/page1-3.png", "./static/resource/page1-4.png", "./static/resource/page1-5.png", "./static/resource/page1-6.png", "./static/resource/page1-7.png", "./static/resource/page2-2.png", "./static/resource/page2-5.png", "./static/resource/page2-9.png", "./static/resource/page2-10.png", "./static/resource/page2-13.png", "./static/resource/page2-14.png", "./static/resource/page2-17.png", "./static/resource/page2-18.png", "./static/resource/page2-21.png", "./static/resource/page2-25.png", "./static/resource/page2-26.png", "./static/resource/page2-29.png", "./static/resource/page2-30.png", "./static/resource/page2-33.png", "./static/resource/page2-34.png", "./static/resource/page2-37.png", "./static/resource/page2-38.png", "./static/resource/page2-41.png", "./static/resource/page3-4.png", "./static/resource/page3-5.png", "./static/resource/page3-6.png", "./static/resource/page3-7.png", "./static/resource/page3-8.png", "./static/resource/page3-9.png", "./static/resource/page3-10.png", "./static/resource/page3-11.png", "./static/resource/page3-13.png"]
         },
         "show": function show() {
+          
           var mum = owo.query('.num')[0];
           this.preloadImages(this.data.imgList, function(e) {
             setTimeout(function() {
@@ -260,6 +271,13 @@
       },
       "page1": {
         "created": function created(params) {
+          if (!_owo.isMobi) {
+            var list = document.querySelectorAll('.upward')
+            for (let index = 0; index < list.length; index++) {
+              const element = list[index];
+              element.src = './static/resource/upward-2.png'
+            }
+          }
           owo.tool.touch({
             el: this.$el,
             end: function end(e) {
@@ -288,17 +306,20 @@
 
           this.data.isRun = true;
           var box = document.getElementsByClassName('page2')[0];
-          lax.setup(); // init
+          if (_owo.isMobi) {
+            lax.setup(); // init
 
-          var updateLax = function updateLax() {
-            lax.update(box.scrollTop);
+            var updateLax = function updateLax() {
+              lax.update(box.scrollTop);
 
-            if (_this2.data.isRun) {
-              window.requestAnimationFrame(updateLax);
-            }
-          };
+              if (_this2.data.isRun) {
+                window.requestAnimationFrame(updateLax);
+              }
+            };
 
-          window.requestAnimationFrame(updateLax);
+            window.requestAnimationFrame(updateLax);
+          }
+          
         },
         "next": function next(params) {
           this.data.isRun = false;

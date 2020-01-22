@@ -79,4 +79,29 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   bottom: 7%;
   height: 26vh;
   z-index: 99;
+  user-select: none;
+}
+
+.pc .page2 .scale-width-box {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pc .page5 .so-3 {
+  display: none;
+}
+
+.pc .page5 .so-2 {
+  height: 6%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 68%;
+}
+
+.pc .page5 .bottom-info {
+  height: 2%;
+  bottom: auto;
+  top: 78%;
 }
